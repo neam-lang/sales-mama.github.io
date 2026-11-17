@@ -7,6 +7,7 @@ for Claude Code. Live at **https://neam-lang.github.io/sales-mama.github.io/**
 |---|---|
 | `index.html` | Overview: hero with the YouTube starter, why, how it works, scenarios, approve-then-send, console gallery, a day, get started, films |
 | `quickstart.html` | Install in five steps, connect Gmail and WhatsApp, rep / manager / runner / Codex, first prompts, health checks, troubleshooting |
+| `customize.html` | Tune Sales Mama for B2C small business or non-profit fundraising: open it in VS Code, which files to edit (13 steps with examples), external websites to search, rules to agree with your DPO |
 | `scenarios.html` | Ten scenarios from the films: the words to type, what Sales Mama does, what you approve, with film chapters |
 | `bench.html` | The Sales Mama score on the Sales Harness Bench: leaderboard, scoring, tracks, violations, how to run it, links to the 🤗 Space and dataset |
 | `end-to-end.html` | The loop from a 2 am signal to a Friday review, roles, the repo, markets, guardrails, commands, quality, docs |

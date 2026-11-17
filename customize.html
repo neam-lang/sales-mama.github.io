@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Customize · Sales Mama</title>
+<meta name="description" content="Tune Sales Mama for your business: B2C small business sales or non-profit fundraising. Which files to edit in VS Code, step by step, with examples.">
+<meta name="theme-color" content="#16131F">
+<link rel="canonical" href="https://neam-lang.github.io/sales-mama.github.io/customize.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Customize · Sales Mama">
+<meta property="og:description" content="Tune Sales Mama for your business: B2C small business sales or non-profit fundraising. Which files to edit in VS Code, step by step, with examples.">
+<meta property="og:url" content="https://neam-lang.github.io/sales-mama.github.io/customize.html">
+<meta property="og:image" content="https://neam-lang.github.io/sales-mama.github.io/assets/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site/site.css">
+<script>try{var t=localStorage.getItem('sm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<script src="site/icons.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Sales Mama home"><span class="logo">SM</span>Sales Mama</a>
+  <div class="mk-pills" aria-label="Live send windows"><span class="mk-pill" data-market="SG"><span class="mk SG">SG</span><b data-now>--:--</b><span class="st" data-st>send window</span></span><span class="mk-pill" data-market="MY"><span class="mk MY">MY</span><b data-now>--:--</b><span class="st" data-st>send window</span></span><span class="mk-pill" data-market="IN"><span class="mk IN">IN</span><b data-now>--:--</b><span class="st" data-st>send window</span></span></div>
+  <button class="jump" type="button" data-jump aria-label="Search or jump (Command K)"><svg class="i i-sm" aria-hidden="true"><use href="#i-search"/></svg><span>Search or jump…</span><kbd>⌘K</kbd></button>
+  <div class="top-actions">
+    <button class="icon-btn jump-icon" type="button" data-jump aria-label="Search or jump"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></button>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark"><svg class="i" aria-hidden="true"><use href="#i-contrast"/></svg></button>
+    <a class="gh-btn" href="https://github.com/neam-lang/sales-mama.ai"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span></a>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Site">
+    <a href="index.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span><span class="lbl">Overview</span><span class="lbl-s" aria-hidden="true">Home</span></a>
+    <a href="quickstart.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span><span class="lbl">Quickstart</span><span class="lbl-s" aria-hidden="true">Start</span></a>
+    <a href="customize.html" aria-current="page"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sliders-horizontal"/></svg></span><span class="lbl">Customize</span><span class="lbl-s" aria-hidden="true">Tune</span></a>
+    <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span><span class="lbl">Scenarios</span><span class="lbl-s" aria-hidden="true">Scenarios</span></a>
+    <a href="end-to-end.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span><span class="lbl">End to end</span><span class="lbl-s" aria-hidden="true">Flow</span></a>
+    <a href="bench.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span><span class="lbl">Bench</span><span class="lbl-s" aria-hidden="true">Bench</span></a>
+    <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span><span class="lbl">Films</span><span class="lbl-s" aria-hidden="true">Films</span></a>
+    <span class="grow"></span>
+    <a class="rail-extra" href="https://github.com/neam-lang/sales-mama.ai"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></span>Repo</a>
+</nav>
+
+<main id="main">
+
+<section class="hero cz-hero" aria-labelledby="cz-h">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <span class="pill-o"><svg class="i i-sm" aria-hidden="true"><use href="#i-sliders-horizontal"/></svg>Customize · an afternoon, no code</span>
+      <h1 id="cz-h" class="h-xl">Same engine.<br><em>Your business.</em></h1>
+      <p class="sub">Sales Mama ships tuned for a B2B IT provider. Everything that makes it <i>that</i> business lives in one folder of plain files: <code class="c" style="background:#2A2142;color:#DDD0FF">knowledge/</code>. Change those files and it finds, writes to and follows up with your customers instead, whether they are members of a studio or donors to a cause.</p>
+      <div class="row">
+        <a class="btn btn-lime" href="#workspace"><svg class="i" aria-hidden="true"><use href="#i-code-xml"/></svg>Open it in VS Code</a>
+        <a class="btn btn-night" href="#files"><svg class="i" aria-hidden="true"><use href="#i-file-pen-line"/></svg>The files, step by step</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="layers">
+        <div class="layer l-engine"><span class="lk"><svg class="i" aria-hidden="true"><use href="#i-lock-keyhole"/></svg></span><div><b>Engine</b><span>skills, subagents, scripts, hooks, approve-then-send</span></div><span class="lt">leave as is</span></div>
+        <div class="layer l-rules"><span class="lk"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span><div><b>Rules</b><span>AGENTS.md, knowledge/guardrails.md</span></div><span class="lt">with your DPO</span></div>
+        <div class="layer l-know"><span class="lk"><svg class="i" aria-hidden="true"><use href="#i-sliders-horizontal"/></svg></span><div><b>Knowledge</b><span>company, customers, offers, sources, timing, voice</span></div><span class="lt">yours to tune</span></div>
+        <div class="layer l-people"><span class="lk"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span><div><b>People</b><span>reps/&lt;you&gt;.md</span></div><span class="lt">each person</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="stories" aria-labelledby="st-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-sparkles"/></svg>The premise</span><h2 id="st-h" class="h-l">Two very different mornings, one Sales Mama.</h2>
+      <p class="lede">Same skills, same scripts, same approve-then-send. Only <code class="c">knowledge/</code> changed. Fictional businesses, illustrative output.</p></div>
+    <div class="grid g2 stories">
+      <article class="story-card a-vam rv" id="b2c">
+        <div class="sc-top"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-store"/></svg></span><div><span class="role">B2C small business</span><h3>Lumen Pilates</h3><p>Nadia runs two studios in Singapore and one in Kuala Lumpur.</p></div></div>
+        <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Run my day</span></div>
+        <ul class="sc-out">
+          <li><svg class="i" aria-hidden="true"><use href="#i-message-circle"/></svg><span><b>4 weekend enquiries</b> answered on WhatsApp (all opted in), trial classes offered.</span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-timer"/></svg><span><b>6 members</b> have two classes left: renewal notes drafted for you to approve.</span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-repeat"/></svg><span><b>3 lapsed members</b> get one “we kept your spot” message.</span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-calendar-clock"/></svg><span>Saturday's open day is in the calendar, with a brief.</span></li>
+        </ul>
+      </article>
+      <article class="story-card a-allocator rv" id="fund">
+        <div class="sc-top"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-heart-handshake"/></svg></span><div><span class="role">Non-profit · social cause</span><h3>Harbour Hope</h3><p>Ravi raises for after-school learning in Singapore and Chennai.</p></div></div>
+        <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Run my day</span></div>
+        <ul class="sc-out">
+          <li><svg class="i" aria-hidden="true"><use href="#i-newspaper"/></svg><span><b>2 companies</b> published sustainability reports naming education: cited first notes drafted.</span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-landmark"/></svg><span>A <b>grant call opens</b> in 3 weeks: proposal reminder set.</span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-gift"/></svg><span><b>12 new monthly donors</b> thanked within 48 hours. No ask in a thank-you.</span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-badge-check"/></svg><span>A new corporate sponsor checked against the registry first.</span></li>
+        </ul>
+      </article>
+    </div>
+    <div class="tbl-wrap rv" style="margin-top:22px"><table class="tbl xlate">
+      <thead><tr><th>In Sales Mama</th><th><svg class="i i-sm" aria-hidden="true"><use href="#i-building-2"/></svg> B2B, as shipped</th><th><svg class="i i-sm" aria-hidden="true"><use href="#i-store"/></svg> B2C small business</th><th><svg class="i i-sm" aria-hidden="true"><use href="#i-heart-handshake"/></svg> Fundraising</th></tr></thead>
+      <tbody>
+        <tr><td>Account</td><td>A company</td><td>A customer who booked, bought or asked</td><td>A company, foundation or opted-in donor</td></tr>
+        <tr><td>Product</td><td>IT Care, Managed WiFi</td><td>Class packs, memberships, packages</td><td>Ways to give: sponsor a centre, monthly giving</td></tr>
+        <tr><td>Signal</td><td>New outlet, contract win</td><td>Enquiry, pack running low, membership ending</td><td>CSR report, grant call, pledge ending</td></tr>
+        <tr><td>Proof</td><td>Case studies</td><td>Reviews you may quote</td><td>Impact stories, audited numbers</td></tr>
+        <tr><td>Meeting</td><td>Pilot scoping</td><td>Trial class, consultation</td><td>Donor meeting, site visit</td></tr>
+        <tr><td>Rep</td><td>Account executive</td><td>Studio or front-desk staff</td><td>Fundraiser, partnerships officer</td></tr>
+        <tr><td>Where leads come from</td><td>Registries, news, tenders</td><td><b>Only your own lists.</b> The web gives timing, never people.</td><td>CSR news and reports for companies; your own lists for people</td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<section class="blk" id="easy" aria-labelledby="easy-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-gauge"/></svg>How easy is it?</span><h2 id="easy-h" class="h-l">Mostly writing, a little YAML.</h2></div>
+    <div class="levels">
+      <div class="level a-allocator rv"><span class="lvl-n">1</span><b>Words</b><p>company, proof, playbook, your profile. Plain English.</p><span class="lvl-t"><svg class="i i-sm" aria-hidden="true"><use href="#i-clock"/></svg>about an hour</span></div>
+      <div class="level a-scout rv"><span class="lvl-n">2</span><b>Lists</b><p>ICP, ontology, offers, sources, scoring, markets, WhatsApp, CRM columns. Short YAML.</p><span class="lvl-t"><svg class="i i-sm" aria-hidden="true"><use href="#i-clock"/></svg>an afternoon</span></div>
+      <div class="level a-amber rv"><span class="lvl-n">3</span><b>Rules</b><p>Rule 8 and your guardrails. One review with your DPO.</p><span class="lvl-t"><svg class="i i-sm" aria-hidden="true"><use href="#i-clock"/></svg>one meeting</span></div>
+      <div class="level muted-l rv"><span class="lvl-n">4</span><b>Engine</b><p>Scripts and skills. Not needed for B2C or fundraising; new markets beyond SG · MY · IN live here.</p><span class="lvl-t"><svg class="i i-sm" aria-hidden="true"><use href="#i-wrench"/></svg>developers</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="workspace" aria-labelledby="ws-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-code-xml"/></svg>Your workspace</span><h2 id="ws-h" class="h-l">Install, open VS Code, find the files.</h2>
+      <p class="lede">Do this as the <b>manager</b>: only the manager may edit <code class="c">knowledge/</code>; the write guard blocks everyone else.</p></div>
+    <ol class="ws-steps">
+      <li class="rv"><span class="ws-n">1</span><div><h3>Install Sales Mama</h3><p>Clone, check, and set yourself up as the manager. Full guide: <a href="quickstart.html">Quickstart</a>.</p>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">terminal</span></div><pre><code>git clone https://github.com/neam-lang/sales-mama.ai.git my-sales-mama
+cd my-sales-mama
+python3 scripts/selftest.py        <span class="cm"># <span class="ok">213/213 passed</span></span></code></pre></div></div></li>
+      <li class="rv"><span class="ws-n">2</span><div><h3>Install VS Code and two extensions</h3>
+        <p>Get <a href="https://code.visualstudio.com">VS Code</a>, then add <a href="https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code">Claude Code for VS Code</a> (Claude beside your files) and <a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML by Red Hat</a> (catches YAML typos as you type).</p></div></li>
+      <li class="rv"><span class="ws-n">3</span><div><h3>Open the folder</h3>
+        <div class="code" data-copy="code ."><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">terminal</span></div><pre><code>code .                             <span class="cm"># opens this folder</span></code></pre></div>
+        <p class="muted" style="font-size:14px">No <code class="c">code</code> command? In VS Code press <kbd class="kb">⇧⌘P</kbd> (<kbd class="kb">Ctrl+Shift+P</kbd> on Windows) and run <i>Shell Command: Install 'code' command in PATH</i>, or use File → Open Folder.</p></div></li>
+      <li class="rv"><span class="ws-n">4</span><div><h3>Work on a branch</h3>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">terminal</span></div><pre><code>git switch -c tune/my-business</code></pre></div>
+        <p class="muted" style="font-size:14px">Your changes stay reviewable; open a pull request when you are happy.</p></div></li>
+    </ol>
+    <p class="label" style="margin:34px 0 14px">What you'll see · click a file to jump to its step</p>
+    <div class="cz" data-mode="b2c"><div class="vsc rv" aria-label="Sales Mama open in VS Code: the files to edit">
+      <div class="vsc-bar"><span class="lights"><i></i><i></i><i></i></span><span>ontology.yaml — sales-mama.ai — Visual Studio Code</span></div>
+      <div class="vsc-body">
+        <div class="vsc-act" aria-hidden="true"><span class="on"><svg class="i" aria-hidden="true"><use href="#i-file-text"/></svg></span><span><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span><span><svg class="i" aria-hidden="true"><use href="#i-git-branch"/></svg></span><span><svg class="i" aria-hidden="true"><use href="#i-layout-grid"/></svg></span><span class="cc"><svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg></span></div>
+        <nav class="vsc-tree" aria-label="Files"><p class="vsc-h">Explorer · sales-mama.ai</p><div class="trow edit"><span class="tw" style="--d:0"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-open"/></svg><span class="tn">knowledge/</span><span class="tg t-edit">edit</span></span></div><a href="#f-company" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">company.md</span><span class="tg t-edit">edit</span></span></a><a href="#f-icp" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">icp.md</span><span class="tg t-edit">edit</span></span></a><a href="#f-ontology" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">ontology.yaml</span><span class="tg t-edit">edit</span></span></a><a href="#f-products" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-open"/></svg><span class="tn">products/</span><span class="tg t-edit">edit</span></span></a><a href="#f-proof" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-open"/></svg><span class="tn">proof/</span><span class="tg t-edit">edit</span></span></a><a href="#f-sources" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">sources.yaml</span><span class="tg t-edit">edit</span></span></a><a href="#f-scoring" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">scoring.yaml</span><span class="tg t-edit">edit</span></span></a><a href="#f-playbook" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">playbook.md</span><span class="tg t-edit">edit</span></span></a><a href="#f-markets" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">markets.yaml</span><span class="tg t-edit">edit</span></span></a><a href="#f-whatsapp" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">whatsapp_templates.yaml</span><span class="tg t-edit">edit</span></span></a><a href="#f-crm" class="trow edit"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">crm_mapping.yaml</span><span class="tg t-edit">edit</span></span></a><a href="#f-rules" class="trow dpo"><span class="tw" style="--d:1"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">guardrails.md</span><span class="tg t-dpo">DPO</span></span></a><a href="#f-reps" class="trow edit"><span class="tw" style="--d:0"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">reps/&lt;you&gt;.md</span><span class="tg t-edit">edit</span></span></a><a href="#f-rules" class="trow dpo"><span class="tw" style="--d:0"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg><span class="tn">AGENTS.md</span><span class="tg t-dpo">DPO</span></span></a><div class="trow leave"><span class="tw" style="--d:0"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-open"/></svg><span class="tn">.agents/skills/</span><span class="tg t-leave">leave</span></span></div><div class="trow leave"><span class="tw" style="--d:0"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-open"/></svg><span class="tn">scripts/</span><span class="tg t-leave">leave</span></span></div><div class="trow leave"><span class="tw" style="--d:0"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-open"/></svg><span class="tn">console/</span><span class="tg t-leave">leave</span></span></div><div class="trow leave"><span class="tw" style="--d:0"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-open"/></svg><span class="tn">wiki/ · raw/ · log/</span><span class="tg t-leave">leave</span></span></div></nav>
+        <div class="vsc-ed">
+          <div class="vsc-tabs"><span class="on"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-cog"/></svg>ontology.yaml</span><span>company.md</span><span>sources.yaml</span></div>
+          <pre class="vsc-code m-b2c"><code><span class="ln"><i>1</i><span class="k">industries</span>: [returning_member, new_enquiry]</span><span class="ln"><i>2</i><span class="k">signals</span>:</span><span class="ln"><i>3</i>  <span class="k">enquiry_received</span>:  {implies: [getting_started], weight: 1.0, decay_days: 14}</span><span class="ln"><i>4</i>  <span class="k">pack_running_low</span>:  {implies: [routine], weight: 0.9, decay_days: 30}</span><span class="ln"><i>5</i>  <span class="k">membership_ending</span>: {implies: [renewal_window], weight: 1.0, decay_days: 45}</span><span class="ln"><i>6</i>  <span class="k">new_year</span>:          {implies: [], weight: 0.4, decay_days: 21, hook: true}</span></code></pre>
+          <pre class="vsc-code m-fund"><code><span class="ln"><i>1</i><span class="k">industries</span>: [banking, technology, foundations]</span><span class="ln"><i>2</i><span class="k">signals</span>:</span><span class="ln"><i>3</i>  <span class="k">csr_focus_education</span>: {implies: [csr_budget], weight: 1.0, decay_days: 180}</span><span class="ln"><i>4</i>  <span class="k">grant_call_open</span>:     {implies: [grant_cycle], weight: 1.0, decay_days: 45}</span><span class="ln"><i>5</i>  <span class="k">pledge_ending</span>:       {implies: [renewal_window], weight: 1.0, decay_days: 90}</span><span class="ln"><i>6</i>  <span class="k">year_end_giving</span>:     {implies: [], weight: 0.4, decay_days: 30, hook: true}</span></code></pre>
+          <div class="vsc-term"><span class="pr">$</span> python3 scripts/lint.py <span class="ok">0 errors</span></div>
+        </div>
+      </div>
+      <div class="vsc-status"><span><svg class="i i-sm" aria-hidden="true"><use href="#i-git-branch"/></svg>tune/my-business</span><span><svg class="i i-sm" aria-hidden="true"><use href="#i-sparkles"/></svg>Claude Code</span><span>YAML</span></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="blk" id="ways" aria-labelledby="ways-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-route"/></svg>Two ways to tune it</span><h2 id="ways-h" class="h-l">Let Claude Code interview you, or edit by hand.</h2></div>
+    <div class="grid g2" style="align-items:start">
+      <div class="card a-mama rv"><div class="row"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg></span><h3>Fastest · ask Claude Code</h3></div>
+        <p style="margin:12px 0">Open the Claude Code panel in VS Code (or run <code class="c">claude</code> in its terminal), press <kbd class="kb">Shift+Tab</kbd> for plan mode, and paste this. It asks one question at a time, proposes every edit, and you review the diff in VS Code before anything is saved.</p>
+        <div class="wrap-code"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">paste into Claude Code (plan mode)</span></div><pre><code>We are &lt;name&gt;, a &lt;B2C small business | non-profit&gt; in &lt;SG / MY / IN&gt;.
+We sell &lt;offers&gt; to &lt;customers | we raise from companies and donors&gt;.
+Read GUIDE.md and knowledge/. Interview me one question at a time, then
+propose edits for B2C sales | fundraising to: company.md, icp.md,
+ontology.yaml, products/, proof/, sources.yaml, scoring.yaml, playbook.md,
+markets.yaml, whatsapp_templates.yaml and crm_mapping.yaml.
+Do not touch scripts/ or skills. List any change to AGENTS.md rule 8 or
+guardrails.md separately for my DPO. Then run python3 scripts/lint.py.</code></pre></div></div></div>
+      <div class="card a-scout rv"><div class="row"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-file-pen-line"/></svg></span><h3>By hand · file by file</h3></div>
+        <p style="margin:12px 0">Follow the thirteen steps below in order. Each shows what the file controls, what to change, and a working example for <b>B2C</b> or <b>fundraising</b>. Start from the shipped file and change values, not keys.</p>
+        <div class="note a-allocator"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>The self-test runs on its own demo copy, so it keeps passing however you tune <code>knowledge/</code>. <code>lint.py</code> checks your real pages against your new words.</span></div>
+        <p style="margin-top:14px"><a class="btn btn-ink btn-sm" href="#files"><svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg>Start with step 1</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk cz" id="files" data-mode="b2c" aria-labelledby="files-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-pen-line"/></svg>The files, step by step</span><h2 id="files-h" class="h-l">Thirteen steps, in the order to edit them.</h2>
+      <p class="lede">Pick your business; every example below switches with it.</p></div>
+    <div class="modebar" role="group" aria-label="Show examples for">
+      <button type="button" class="mode-btn" data-mode-set="b2c" aria-pressed="true"><svg class="i i-sm" aria-hidden="true"><use href="#i-store"/></svg>B2C small business</button>
+      <button type="button" class="mode-btn" data-mode-set="fund" aria-pressed="false"><svg class="i i-sm" aria-hidden="true"><use href="#i-heart-handshake"/></svg>Non-profit · fundraising</button>
+    </div>
+    <div class="fcards">
+<article class="fcard rv" id="f-company">
+      <div class="fcard-l">
+        <span class="fnum">01</span>
+        <code class="fpath">knowledge/company.md</code>
+        <h3>Who you are and how you sound</h3>
+        <span class="role a-allocator"><svg class="i i-sm" aria-hidden="true"><use href="#i-pen-line"/></svg>Words</span>
+        <dl><dt>It controls</dt><dd>What you sell, the value you bring, and your voice. Every draft and brief starts here.</dd><dt>Change it to</dt><dd>Describe your business in plain English, as you would to a new hire.</dd></dl>
+        
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/company.md · B2C</span></div><pre><code><span class="h"># Company</span>
+<span class="h">## What we sell</span>
+Lumen Pilates runs two studios in Singapore (Tampines, Bishan) and one in Kuala Lumpur.
+We sell class packs, monthly memberships and a first-visit intro offer to adults who
+want a stronger back and better posture. Our customers are people who booked a class,
+asked about one, or bought from us before.
+
+<span class="h">## Value props</span>
+- Never run out mid-month: we remind you before your last class (<span class="q">`routine`</span>).
+- Back after a break: a gentle restart plan with your usual instructor (<span class="q">`restart`</span>).
+
+<span class="h">## Voice</span>
+Friendly, encouraging, short. First names. No pressure and no exclamation marks.</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/company.md · fundraising</span></div><pre><code><span class="h"># Company</span>
+<span class="h">## What we do</span>
+Harbour Hope is a registered charity in Singapore with a partner centre in Chennai.
+We run free after-school learning for children from low-income families. We raise from
+companies (CSR and employee volunteering), foundations and grant-makers, and from
+monthly donors who chose to hear from us.
+
+<span class="h">## Value props</span>
+- See where your CSR budget goes: a named centre and a report every term (<span class="q">`csr_budget`</span>).
+- Engage your people: volunteering days with our learners (<span class="q">`employee_engagement`</span>).
+
+<span class="h">## Voice</span>
+Warm and specific, never guilt. One story, one number, one ask.</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-icp">
+      <div class="fcard-l">
+        <span class="fnum">02</span>
+        <code class="fpath">knowledge/icp.md</code>
+        <h3>Who you serve</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>Who counts as a good fit in each market, and who is never a fit. Scores and new-lead checks read the yaml block.</dd><dt>Change it to</dt><dd>B2C: your customer segments and neighbourhoods. Fundraising: the funders you want, and your gift-acceptance policy as exclusions.</dd></dl>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Keep the yaml inside a fenced block, as in the shipped file; the scripts read only that block.</span></div>
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/icp.md · B2C</span></div><pre><code><span class="cm">## Fit — Singapore (SG)</span>
+People who booked, enquired or bought; near our two studios.
+<span class="k">fit</span>:
+  <span class="k">industries</span>: [returning_member, new_enquiry, corporate_wellness]<span class="cm">   # segments, from ontology.yaml</span>
+  <span class="k">employees</span>: []<span class="cm">                  # not used for people; see scoring.yaml</span>
+  <span class="k">regions</span>: [Tampines, Bishan, Pasir Ris, Bedok, Ang Mo Kio]
+
+<span class="cm">## Hard exclusions</span>
+<span class="k">exclude</span>:
+  <span class="k">name_patterns</span>: []<span class="cm">              # people only ever come from our own lists</span></code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/icp.md · fundraising</span></div><pre><code><span class="cm">## Fit — Singapore (SG)</span>
+Companies with a CSR or community budget, and foundations that fund education.
+<span class="k">fit</span>:
+  <span class="k">industries</span>: [banking, technology, property, consumer_goods, foundations]
+  <span class="k">employees</span>: [200, 100000]
+  <span class="k">regions</span>: []<span class="cm">                    # whole market</span>
+
+<span class="cm">## Hard exclusions                # our gift-acceptance policy</span>
+<span class="k">exclude</span>:
+  <span class="k">name_patterns</span>: [&quot;tobacco&quot;, &quot;casino&quot;, &quot;gambling&quot;, &quot;arms&quot;]</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-ontology">
+      <div class="fcard-l">
+        <span class="fnum">03</span>
+        <code class="fpath">knowledge/ontology.yaml</code>
+        <h3>The words Sales Mama may use</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>The closed vocabulary: segments, the signals that mean “now is a good time”, the needs they imply and the people who feel them. Accounts can only be tagged with these terms.</dd><dt>Change it to</dt><dd>Your own moments that matter: an enquiry, a pack running low, a CSR report, a grant call.</dd></dl>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Change the ontology before you import customers or donors: <code>lint.py</code> flags any page tagged with a term that is no longer here.</span></div>
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/ontology.yaml · B2C</span></div><pre><code><span class="k">industries</span>: [returning_member, new_enquiry, corporate_wellness]
+<span class="k">signals</span>:
+  <span class="k">enquiry_received</span>:  {implies: [getting_started], weight: 1.0, decay_days: 14}
+  <span class="k">trial_booked</span>:      {implies: [getting_started], weight: 0.9, decay_days: 21}
+  <span class="k">pack_running_low</span>:  {implies: [routine],         weight: 0.9, decay_days: 30}
+  <span class="k">membership_ending</span>: {implies: [renewal_window],  weight: 1.0, decay_days: 45}
+  <span class="k">lapsed_60_days</span>:    {implies: [restart],         weight: 0.7, decay_days: 90}
+  <span class="k">new_year</span>:          {implies: [], weight: 0.4, decay_days: 21, hook: true}<span class="cm">   # season, not a person</span>
+  <span class="k">moved_away</span>:        {negative: true, weight: -0.8, decay_days: 365}
+<span class="k">pains</span>:
+  <span class="k">getting_started</span>: {personas: [member]}
+  <span class="k">routine</span>:         {personas: [member]}
+  <span class="k">renewal_window</span>:  {personas: [member]}
+  <span class="k">restart</span>:         {personas: [member]}
+<span class="k">personas</span>:
+  <span class="k">member</span>: {title_patterns: []}</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/ontology.yaml · fundraising</span></div><pre><code><span class="k">industries</span>: [banking, technology, property, consumer_goods, foundations]
+<span class="k">signals</span>:
+  <span class="k">csr_report_published</span>: {implies: [csr_budget],          weight: 0.9, decay_days: 120}
+  <span class="k">csr_focus_education</span>:  {implies: [csr_budget],          weight: 1.0, decay_days: 180}
+  <span class="k">volunteering_drive</span>:   {implies: [employee_engagement], weight: 0.8, decay_days: 60}
+  <span class="k">grant_call_open</span>:      {implies: [grant_cycle],         weight: 1.0, decay_days: 45}
+  <span class="k">pledge_ending</span>:        {implies: [renewal_window],      weight: 1.0, decay_days: 90}
+  <span class="k">year_end_giving</span>:      {implies: [], weight: 0.4, decay_days: 30, hook: true}
+  <span class="k">controversy</span>:          {negative: true, weight: -0.8, decay_days: 365}
+<span class="k">pains</span>:
+  <span class="k">csr_budget</span>:          {personas: [csr_head, finance_head]}
+  <span class="k">employee_engagement</span>: {personas: [hr_head, csr_head]}
+  <span class="k">grant_cycle</span>:         {personas: [programme_officer]}
+  <span class="k">renewal_window</span>:      {personas: [csr_head]}
+<span class="k">personas</span>:
+  <span class="k">csr_head</span>:          {title_patterns: [&quot;csr&quot;, &quot;sustainability&quot;, &quot;esg&quot;, &quot;community&quot;]}
+  <span class="k">hr_head</span>:           {title_patterns: [&quot;people&quot;, &quot;hr&quot;, &quot;human resources&quot;]}
+  <span class="k">finance_head</span>:      {title_patterns: [&quot;finance&quot;, &quot;cfo&quot;]}
+  <span class="k">programme_officer</span>: {title_patterns: [&quot;programme&quot;, &quot;program&quot;, &quot;grants&quot;]}</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-products">
+      <div class="fcard-l">
+        <span class="fnum">04</span>
+        <code class="fpath">knowledge/products/*.yaml</code>
+        <h3>What you offer</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>One file per offer. Sales Mama recommends only these, with the chain from signal to need to offer.</dd><dt>Change it to</dt><dd>B2C: packages and memberships. Fundraising: ways to give.</dd></dl>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Add a file per offer: <code>monthly-unlimited.yaml</code>, <code>intro-offer.yaml</code>; or <code>volunteering-day.yaml</code>, <code>monthly-giving.yaml</code>.</span></div>
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/products/class-pack-10.yaml · B2C</span></div><pre><code><span class="k">id</span>: class-pack-10
+<span class="k">name</span>: 10-class pack
+<span class="k">summary</span>: &quot;Ten group classes, valid for three months, at any studio.&quot;
+<span class="k">solves</span>: [routine, restart]<span class="cm">          # pains from ontology.yaml</span>
+<span class="k">fits</span>: {industries: [], employees: []}<span class="cm">   # empty = anyone</span>
+<span class="k">requires</span>: []
+<span class="k">skip_if_owned</span>: [monthly-unlimited]
+<span class="k">available_in</span>: [SG, MY]
+<span class="k">typical_value</span>: {SG: 320, MY: 650}</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/products/sponsor-a-centre.yaml · fundraising</span></div><pre><code><span class="k">id</span>: sponsor-a-centre
+<span class="k">name</span>: Sponsor a learning centre
+<span class="k">summary</span>: &quot;A year of after-school learning for 40 children, with a report every term.&quot;
+<span class="k">solves</span>: [csr_budget]
+<span class="k">fits</span>: {industries: [], employees: [200, 100000]}
+<span class="k">requires</span>: []
+<span class="k">skip_if_owned</span>: []
+<span class="k">available_in</span>: [SG, IN]
+<span class="k">typical_value</span>: {SG: 60000, IN: 2500000}</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-proof">
+      <div class="fcard-l">
+        <span class="fnum">05</span>
+        <code class="fpath">knowledge/proof/*.md</code>
+        <h3>What you can prove</h3>
+        <span class="role a-allocator"><svg class="i i-sm" aria-hidden="true"><use href="#i-pen-line"/></svg>Words</span>
+        <dl><dt>It controls</dt><dd>The only stories and numbers a draft may cite. Empty means drafts cite none.</dd><dt>Change it to</dt><dd>B2C: reviews you have permission to quote. Fundraising: impact stories and audited numbers.</dd></dl>
+        
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/proof/restart-story.md · B2C</span></div><pre><code><span class="h"># Back after a break</span>
+Source: Google review by a member, quoted with her permission (2026-09-12).
+After six months away she came back with the restart plan; ten classes later
+her back pain was gone. Quote: “I only came back because they kept my spot.”</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/proof/restart-story.md · fundraising</span></div><pre><code><span class="h"># Term 3 at the Tampines centre</span>
+Source: Harbour Hope annual report 2026, p. 12 (audited).
+42 children attended at least 80% of sessions; 31 improved a full grade in maths.
+Use: corporate donors interested in education outcomes.</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-sources">
+      <div class="fcard-l">
+        <span class="fnum">06</span>
+        <code class="fpath">knowledge/sources.yaml</code>
+        <h3>Where to look outside</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>The external websites and your own exports Sales Mama scans every night. Each source needs terms and a <code>tos_checked</code> date or it is skipped.</dd><dt>Change it to</dt><dd>B2C: your booking export plus public calendars. Fundraising: CSR news, grant calls, company reports. See <a href="#sites">the website list</a> below.</dd></dl>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Access types: <code>search</code> (scout web search), <code>rss</code>, <code>dataset</code>, <code>page</code> (a public page), <code>internal</code> (your own export).</span></div>
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/sources.yaml · B2C</span></div><pre><code><span class="k">sources</span>:
+  - <span class="k">id</span>: sg-own-bookings<span class="cm">          # your booking system export in raw/crm/</span>
+    <span class="k">market</span>: SG
+    <span class="k">type</span>: internal
+    <span class="k">access</span>: internal
+    <span class="k">terms</span>: &quot;Our own booking export; members who agreed to hear from us&quot;
+    <span class="k">signal</span>: membership_ending
+    <span class="k">window_days</span>: 45
+    <span class="k">trust</span>: 1.0
+    <span class="k">tos_checked</span>: 2026-11-17
+  - <span class="k">id</span>: sg-community-events<span class="cm">      # timing only, never people</span>
+    <span class="k">market</span>: SG
+    <span class="k">type</span>: events
+    <span class="k">access</span>: page
+    <span class="k">terms</span>: &quot;Public event listings; name, dates, venue and link only&quot;
+    <span class="k">urls</span>: [https://www.onepa.gov.sg/events]
+    <span class="k">keep</span>: wellness and fitness events near Tampines and Bishan
+    <span class="k">lookahead_days</span>: 60
+    <span class="k">trust</span>: 0.8
+    <span class="k">tos_checked</span>: 2026-11-17</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/sources.yaml · fundraising</span></div><pre><code><span class="k">sources</span>:
+  - <span class="k">id</span>: sg-csr-news
+    <span class="k">market</span>: SG
+    <span class="k">type</span>: news
+    <span class="k">access</span>: search
+    <span class="k">terms</span>: &quot;Headline + link + own-words summary only; skip paywalled articles&quot;
+    <span class="k">query</span>: &gt;-
+      Singapore company (&quot;sustainability report&quot; OR CSR OR &quot;employee volunteering&quot;)
+      (education OR children OR &quot;low-income&quot;)
+    <span class="k">prefer</span>: [eco-business.com, businesstimes.com.sg, straitstimes.com, nvpc.org.sg]
+    <span class="k">signals</span>: [csr_report_published, csr_focus_education, volunteering_drive]
+    <span class="k">lookback_days</span>: 14
+    <span class="k">trust</span>: 0.8
+    <span class="k">tos_checked</span>: 2026-11-17
+  - <span class="k">id</span>: sg-grant-calls
+    <span class="k">market</span>: SG
+    <span class="k">type</span>: news
+    <span class="k">access</span>: search
+    <span class="k">terms</span>: &quot;Public grant announcements; headline + link + summary&quot;
+    <span class="k">query</span>: Singapore grant call education site:toteboard.gov.sg OR site:ncss.gov.sg
+    <span class="k">signals</span>: [grant_call_open]
+    <span class="k">trust</span>: 0.9
+    <span class="k">tos_checked</span>: 2026-11-17</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-scoring">
+      <div class="fcard-l">
+        <span class="fnum">07</span>
+        <code class="fpath">knowledge/scoring.yaml</code>
+        <h3>What matters most</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>How fit, intent, past behaviour and engagement add up to a score, and the tier cut-offs.</dd><dt>Change it to</dt><dd>B2C: lean on intent and engagement; people have no head count. Fundraising: give past giving real weight.</dd></dl>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Keep the other keys from the shipped file; change only the numbers you mean to.</span></div>
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/scoring.yaml · B2C</span></div><pre><code><span class="k">weights</span>: {fit: 0.15, intent: 0.55, propensity: 0.0, engagement: 0.30}
+<span class="k">fit</span>: {industry_match: 0.5, size_in_range: 0.0, region_match: 0.3,
+      <span class="k">owns_prerequisite</span>: 0.2, unknown: 0.5}<span class="cm">     # size off: people have no head count</span>
+<span class="k">tiers</span>: {A: 0.65, B: 0.40}</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/scoring.yaml · fundraising</span></div><pre><code><span class="k">weights</span>: {fit: 0.25, intent: 0.40, propensity: 0.25, engagement: 0.10}
+<span class="k">propensity</span>: {missing: 0.0}<span class="cm">      # past giving, 0–1, from your donor export</span>
+<span class="k">tiers</span>: {A: 0.70, B: 0.45}</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-playbook">
+      <div class="fcard-l">
+        <span class="fnum">08</span>
+        <code class="fpath">knowledge/playbook.md</code>
+        <h3>How you follow up</h3>
+        <span class="role a-allocator"><svg class="i i-sm" aria-hidden="true"><use href="#i-pen-line"/></svg>Words</span>
+        <dl><dt>It controls</dt><dd>Sequences, timing and message rules every draft follows.</dd><dt>Change it to</dt><dd>B2C: short, quick, one reminder at most. Fundraising: thank first, report, then ask.</dd></dl>
+        
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/playbook.md · B2C</span></div><pre><code><span class="h">## Sequences</span>
+- New enquiry: reply within one working day (WhatsApp if they opted in, else email) → fu1 after 2 days → stop.
+- Pack running low: one note when 2 classes are left. Never more than one reminder a week.
+- Lapsed 60 days: one “we kept your spot” message, then nothing.
+
+<span class="h">## Message rules</span>
+- At most 60 words on WhatsApp, 90 by email. First name, one offer, one question.</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/playbook.md · fundraising</span></div><pre><code><span class="h">## Sequences</span>
+- Company: first email cites their CSR focus → fu1 after 5 working days → a call.
+- New gift: thank within 48 hours → impact update at 30 days → renewal talk 60 days before the pledge ends.
+- Never ask in the same message you thank.
+
+<span class="h">## Message rules</span>
+- One story, one number from knowledge/proof/, one ask. At most 120 words.</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-markets">
+      <div class="fcard-l">
+        <span class="fnum">09</span>
+        <code class="fpath">knowledge/markets.yaml</code>
+        <h3>When you may send</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>Each market's time zone, send window, holidays, channels and languages (SG, MY and IN).</dd><dt>Change it to</dt><dd>B2C: consumers read on Saturdays too. One time range per day; a rep can override theirs.</dd></dl>
+        
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/markets.yaml · B2C</span></div><pre><code><span class="k">markets</span>:
+  <span class="k">SG</span>:
+    <span class="k">tz</span>: Asia/Singapore
+    <span class="k">channels</span>: [email, whatsapp]
+    <span class="k">send_windows</span>: {days: [mon, tue, wed, thu, fri, sat], hours: &quot;10:00-12:00&quot;}</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/markets.yaml · fundraising</span></div><pre><code><span class="k">markets</span>:
+  <span class="k">SG</span>:
+    <span class="k">tz</span>: Asia/Singapore
+    <span class="k">channels</span>: [email, whatsapp, linkedin]
+    <span class="k">send_windows</span>: {days: [mon, tue, wed, thu], hours: &quot;09:00-11:30&quot;}
+  <span class="k">IN</span>:
+    <span class="k">tz</span>: Asia/Kolkata
+    <span class="k">send_windows</span>: {days: [mon, tue, wed, thu, fri], hours: &quot;10:00-12:30&quot;}</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-whatsapp">
+      <div class="fcard-l">
+        <span class="fnum">10</span>
+        <code class="fpath">knowledge/whatsapp_templates.yaml</code>
+        <h3>Your approved WhatsApp messages</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>First-contact templates, already approved in WhatsApp Manager. Every one ends with an opt-out line.</dd><dt>Change it to</dt><dd>Write them for your moments, then get each approved by Meta.</dd></dl>
+        
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/whatsapp_templates.yaml · B2C</span></div><pre><code><span class="k">templates</span>:
+  <span class="k">pack-low-wa</span>:
+    <span class="k">name</span>: pack_running_low
+    <span class="k">lang</span>: en
+    <span class="k">markets</span>: [SG, MY]
+    <span class="k">steps</span>: [first]
+    <span class="k">signals</span>: [pack_running_low]
+    <span class="k">text</span>: &quot;Hi {{1}}, you have {{2}} classes left on your pack. Shall we hold your usual Tuesday 7pm spot? Reply STOP to opt out.&quot;</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/whatsapp_templates.yaml · fundraising</span></div><pre><code><span class="k">templates</span>:
+  <span class="k">thank-you-wa</span>:
+    <span class="k">name</span>: donor_thank_you
+    <span class="k">lang</span>: en
+    <span class="k">markets</span>: [SG]
+    <span class="k">steps</span>: [first]
+    <span class="k">signals</span>: []
+    <span class="k">text</span>: &quot;Hi {{1}}, thank you for your gift to Harbour Hope. This term {{2}} children are learning with us. Reply STOP to opt out.&quot;</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-crm">
+      <div class="fcard-l">
+        <span class="fnum">11</span>
+        <code class="fpath">knowledge/crm_mapping.yaml</code>
+        <h3>How your list comes in</h3>
+        <span class="role a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-list-checks"/></svg>Lists</span>
+        <dl><dt>It controls</dt><dd>Which column of your export becomes which field. Your booking system, spreadsheet or donor CRM all work as CSV.</dd><dt>Change it to</dt><dd>Map your own column names; map your segment and offer names to ontology and product ids.</dd></dl>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Import with <code>/mama-ingest</code> (manager only).</span></div>
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/crm_mapping.yaml · B2C</span></div><pre><code><span class="k">export</span>:
+  <span class="k">&quot;Member Name&quot;</span>: name
+  <span class="k">&quot;Country&quot;</span>: market
+  <span class="k">&quot;Studio&quot;</span>: city
+  <span class="k">&quot;Segment&quot;</span>: industry
+  <span class="k">&quot;Plan&quot;</span>: products_owned
+  <span class="k">&quot;Membership End&quot;</span>: contract_end<span class="cm">     # feeds membership_ending</span>
+<span class="k">industry_values</span>: {&quot;Returning&quot;: returning_member, &quot;New&quot;: new_enquiry, &quot;Corporate&quot;: corporate_wellness}
+<span class="k">product_values</span>: {&quot;10 Pack&quot;: class-pack-10, &quot;Unlimited&quot;: monthly-unlimited}</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">knowledge/crm_mapping.yaml · fundraising</span></div><pre><code><span class="k">export</span>:
+  <span class="k">&quot;Organisation&quot;</span>: name
+  <span class="k">&quot;Country&quot;</span>: market
+  &quot;UEN / CIN&quot;: reg_id
+  <span class="k">&quot;Website&quot;</span>: domain
+  <span class="k">&quot;Sector&quot;</span>: industry
+  <span class="k">&quot;Giving Type&quot;</span>: products_owned
+  <span class="k">&quot;Pledge End&quot;</span>: contract_end<span class="cm">         # feeds pledge_ending</span>
+  <span class="k">&quot;Giving Score&quot;</span>: propensity<span class="cm">         # 0–1</span>
+<span class="k">industry_values</span>: {&quot;Finance&quot;: banking, &quot;Tech&quot;: technology, &quot;Foundation&quot;: foundations}
+<span class="k">product_values</span>: {&quot;Centre Sponsor&quot;: sponsor-a-centre, &quot;Volunteering&quot;: volunteering-day}</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-rules">
+      <div class="fcard-l">
+        <span class="fnum">12</span>
+        <code class="fpath">knowledge/guardrails.md + AGENTS.md</code>
+        <h3>Your rules, with your DPO</h3>
+        <span class="role a-amber"><svg class="i i-sm" aria-hidden="true"><use href="#i-lock-keyhole"/></svg>With your DPO</span>
+        <dl><dt>It controls</dt><dd>Compliance per market, and the 17 hard rules every agent follows. Rule 8 says “business contact details only”.</dd><dt>Change it to</dt><dd>B2C customers and individual donors are people, not businesses: rewrite rule 8 around consent, and add your sector's rules. Agree the wording with your DPO.</dd></dl>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Not legal advice. Change these two files only as the manager, after your DPO signs off.</span></div>
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">AGENTS.md · rule 8 · B2C</span></div><pre><code>8. Personal data: only people who gave us their details (an enquiry, a booking,
+   a purchase or a sign-up) and agreed to hear from us; keep only what that purpose
+   needs. Never collect data about people from the web, social media or news.
+   WhatsApp only with a recorded opt-in. Delete on request.</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">AGENTS.md · rule 8 · fundraising</span></div><pre><code>8. Personal data: companies and foundations as in B2B. Individual donors only when
+   they gave us their details and agreed to hear from us; keep only what giving
+   and thanking need. Never research individuals on the web.
+   (guardrails.md) Never promise a tax deduction unless we hold IPC status.</code></pre></div></div></div>
+    </article>
+<article class="fcard rv" id="f-reps">
+      <div class="fcard-l">
+        <span class="fnum">13</span>
+        <code class="fpath">reps/&lt;you&gt;.md</code>
+        <h3>Each person's profile</h3>
+        <span class="role a-allocator"><svg class="i i-sm" aria-hidden="true"><use href="#i-pen-line"/></svg>Words</span>
+        <dl><dt>It controls</dt><dd>Role, markets, territory, capacity, tone and signature for each person.</dd><dt>Change it to</dt><dd>Studios or regions as territory; your tone and sign-off.</dd></dl>
+        
+      </div>
+      <div class="fcard-r"><div class="m-b2c"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">reps/nadia.md · B2C</span></div><pre><code><span class="k">role</span>: rep
+<span class="k">markets</span>: [SG]
+<span class="k">territory</span>:
+  <span class="k">industries</span>: [returning_member, new_enquiry]
+  <span class="k">regions</span>: [Tampines, Pasir Ris]
+<span class="k">max_active</span>: 200
+<span class="k">daily_quota</span>: 30
+<span class="k">tone</span>: warm, short, first names
+<span class="k">signature</span>: |
+  Nadia · Lumen Pilates Tampines</code></pre></div></div><div class="m-fund"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">reps/nadia.md · fundraising</span></div><pre><code><span class="k">role</span>: rep
+<span class="k">markets</span>: [SG, IN]
+<span class="k">territory</span>:
+  <span class="k">industries</span>: [banking, technology, foundations]
+  <span class="k">regions</span>: []
+<span class="k">max_active</span>: 60
+<span class="k">daily_quota</span>: 15
+<span class="k">tone</span>: warm and specific, never guilt
+<span class="k">signature</span>: |
+  Ravi · Partnerships, Harbour Hope</code></pre></div></div></div>
+    </article>
+    </div>
+
+    <div class="sec-head" id="sites" style="margin-top:80px"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-globe"/></svg>External websites to search</span><h2 class="h-l">Where Sales Mama should look.</h2>
+      <p class="lede">Add these to <code class="c">knowledge/sources.yaml</code>. Sales Mama stores a headline, link, date and a short summary in its own words, never full text; it skips paywalls, logins and captchas, and never researches private individuals.</p></div>
+    <div class="sitegrid m-b2c"><div class="sitecol a-mama"><p class="sitehead"><span class="sq"><svg class="i i-sm" aria-hidden="true"><use href="#i-database"/></svg></span>Your own data</p><ul><li><b>Booking or POS export</b><span class="dom">your files</span><span class="use">Members, packs, renewals, lapsed customers</span><span class="acc">internal</span></li><li><b>Website enquiry form</b><span class="dom">your files</span><span class="use">People who asked you to get in touch</span><span class="acc">internal</span></li><li><b>Event sign-up sheets</b><span class="dom">your files</span><span class="use">Opted-in names from your own events</span><span class="acc">internal</span></li></ul></div><div class="sitecol a-risk"><p class="sitehead"><span class="sq"><svg class="i i-sm" aria-hidden="true"><use href="#i-map-pin"/></svg></span>Singapore</p><ul><li><a href="https://www.onepa.gov.sg/events">onePA events <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.onepa.gov.sg</span><span class="use">Community events near your outlets</span><span class="acc">page</span></li><li><a href="https://www.moe.gov.sg">MOE school terms <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.moe.gov.sg</span><span class="use">Term and holiday dates: timing for family offers</span><span class="acc">page</span></li><li><a href="https://data.gov.sg">data.gov.sg <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">data.gov.sg</span><span class="use">Open datasets: new estates, public holidays</span><span class="acc">dataset</span></li></ul></div><div class="sitecol a-scout"><p class="sitehead"><span class="sq"><svg class="i i-sm" aria-hidden="true"><use href="#i-map-pin"/></svg></span>Malaysia</p><ul><li><a href="https://www.data.gov.my">data.gov.my <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.data.gov.my</span><span class="use">Open datasets for timing and areas</span><span class="acc">dataset</span></li><li><a href="https://www.moe.gov.my">MOE Malaysia <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.moe.gov.my</span><span class="use">School calendar dates</span><span class="acc">page</span></li></ul></div><div class="sitecol a-writer"><p class="sitehead"><span class="sq"><svg class="i i-sm" aria-hidden="true"><use href="#i-map-pin"/></svg></span>India</p><ul><li><a href="https://data.gov.in">data.gov.in <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">data.gov.in</span><span class="use">Open datasets for timing and areas</span><span class="acc">dataset</span></li><li><b>Local news search</b><span class="dom">your files</span><span class="use">New malls, festivals and openings near you</span><span class="acc">search</span></li></ul></div></div>
+    <div class="sitegrid m-fund"><div class="sitecol a-risk"><p class="sitehead"><span class="sq"><svg class="i i-sm" aria-hidden="true"><use href="#i-map-pin"/></svg></span>Singapore</p><ul><li><a href="https://www.charities.gov.sg">Charity Portal <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.charities.gov.sg</span><span class="use">Charity and IPC status; fund-raising rules</span><span class="acc">page</span></li><li><a href="https://www.toteboard.gov.sg">Tote Board <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.toteboard.gov.sg</span><span class="use">Grant schemes and calls</span><span class="acc">search</span></li><li><a href="https://www.ncss.gov.sg">NCSS <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.ncss.gov.sg</span><span class="use">Social-service funding and calls</span><span class="acc">search</span></li><li><a href="https://www.comchest.gov.sg">Community Chest <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.comchest.gov.sg</span><span class="use">Giving programmes and partners</span><span class="acc">search</span></li><li><a href="https://www.nvpc.org.sg">NVPC · Company of Good <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.nvpc.org.sg</span><span class="use">Companies committed to giving</span><span class="acc">search</span></li><li><a href="https://www.sgx.com/securities/company-announcements">SGX announcements <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.sgx.com</span><span class="use">Sustainability reports of listed companies</span><span class="acc">search</span></li><li><a href="https://www.eco-business.com">Eco-Business <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.eco-business.com</span><span class="use">CSR and sustainability news</span><span class="acc">search</span></li></ul></div><div class="sitecol a-scout"><p class="sitehead"><span class="sq"><svg class="i i-sm" aria-hidden="true"><use href="#i-map-pin"/></svg></span>Malaysia</p><ul><li><a href="https://www.bursamalaysia.com">Bursa Malaysia <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.bursamalaysia.com</span><span class="use">Listed companies' sustainability statements</span><span class="acc">search</span></li><li><a href="https://www.hasil.gov.my">LHDN (HASiL) <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.hasil.gov.my</span><span class="use">Approved institutions for tax-exempt gifts</span><span class="acc">page</span></li><li><a href="https://www.ros.gov.my">Registrar of Societies <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.ros.gov.my</span><span class="use">Registered societies and partners</span><span class="acc">page</span></li></ul></div><div class="sitecol a-writer"><p class="sitehead"><span class="sq"><svg class="i i-sm" aria-hidden="true"><use href="#i-map-pin"/></svg></span>India</p><ul><li><a href="https://www.csr.gov.in">National CSR Portal <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.csr.gov.in</span><span class="use">Company-wise CSR spend (read by hand: captcha)</span><span class="acc">by hand</span></li><li><a href="https://ngodarpan.gov.in">NGO Darpan <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">ngodarpan.gov.in</span><span class="use">NGO registry and partner checks</span><span class="acc">page</span></li><li><a href="https://www.bseindia.com/corporates/ann.html">BSE announcements <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.bseindia.com</span><span class="use">Annual and BRSR reports of listed companies</span><span class="acc">search</span></li><li><a href="https://www.mca.gov.in">MCA <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">www.mca.gov.in</span><span class="use">Company filings; CSR-1 for implementing agencies</span><span class="acc">page</span></li><li><a href="https://fcraonline.nic.in">FCRA portal <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a><span class="dom">fcraonline.nic.in</span><span class="use">Rules for foreign contributions to Indian NGOs</span><span class="acc">page</span></li></ul></div></div>
+    <p class="muted" style="font-size:13.5px;margin-top:12px">Access: <b>internal</b> your export in raw/ · <b>search</b> scout web search · <b>page</b> a public page · <b>dataset</b> open data · <b>by hand</b> you read it and add notes. Check each site's terms and set <code class="c">tos_checked</code>.</p>
+
+    <div class="sec-head" style="margin-top:80px"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-lock-keyhole"/></svg>Rules to agree first</span><h2 class="h-l">Customers and donors are people.</h2>
+      <p class="lede">Shipped Sales Mama handles business contacts only. Before real customer or donor data goes in, agree these with your DPO. Not legal advice.</p></div>
+    <div class="grid g3 m-b2c">
+      <div class="card a-amber rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-user-check"/></svg></span><h3 style="margin:14px 0 6px">Consent and purpose</h3><p>Only people who gave you their details and agreed to hear from you. Keep only what the purpose needs; delete on request.</p></div>
+      <div class="card a-amber rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-ban"/></svg></span><h3 style="margin:14px 0 6px">Calls and SMS</h3><p>In Singapore, check the <a href="https://www.dnc.gov.sg">DNC Registry</a> before calling or texting a number. Sales Mama never automates calls or SMS.</p></div>
+      <div class="card a-amber rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-message-circle"/></svg></span><h3 style="margin:14px 0 6px">WhatsApp</h3><p>Recorded opt-in, an approved template for first contact, an opt-out line, inside the send window.</p></div>
+    </div>
+    <div class="grid g3 m-fund">
+      <div class="card a-amber rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-receipt-text"/></svg></span><h3 style="margin:14px 0 6px">Tax receipts (SG)</h3><p>Only gifts to an approved IPC are tax-deductible. Never promise a deduction unless you hold IPC status (<a href="https://www.charities.gov.sg">Charity Portal</a>).</p></div>
+      <div class="card a-amber rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-megaphone"/></svg></span><h3 style="margin:14px 0 6px">Public appeals (SG)</h3><p>Charities and permit holders submit details of public fund-raising appeals on the Charity Portal before the appeal starts.</p></div>
+      <div class="card a-amber rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-landmark"/></svg></span><h3 style="margin:14px 0 6px">India</h3><p>Companies' CSR money can go only to registered implementing agencies (Form CSR-1); foreign contributions to Indian NGOs need FCRA registration.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="check" aria-labelledby="check-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-check-check"/></svg>Check, then switch on</span><h2 id="check-h" class="h-l">Rehearse before anything is sent.</h2>
+      <p class="lede">Sending stays off until the manager turns it on in <code class="c">knowledge/sending.yaml</code>, so you can rehearse safely.</p></div>
+    <div class="grid g2" style="align-items:start">
+      <div class="wrap-code"><div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">terminal</span></div><pre><code>python3 scripts/lint.py            <span class="cm"># your pages use only your new words</span>
+python3 scripts/selftest.py        <span class="cm"># <span class="ok">213/213</span>, unaffected by your edits</span>
+git add knowledge reps &amp;&amp; git commit -m "Tune Sales Mama for our business"</code></pre></div></div>
+      <div class="grid" style="gap:10px">
+        <div class="chk"><div class="you cmdy"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>/mama-ingest</span></div><span>Import your customer or donor export (CSV in <code class="c">raw/crm/</code>).</span></div>
+        <div class="chk"><div class="you cmdy"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>/mama-nightly dry-run</span></div><span>Scan your new sources and score, without writing pages.</span></div>
+        <div class="chk"><div class="you cmdy"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>/mama-recommend &lt;one account&gt;</span></div><span>The offer and its chain should make sense to you.</span></div>
+        <div class="chk"><div class="you cmdy"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>/mama-draft &lt;one account&gt; first</span></div><span>Read it aloud. Wrong tone? Fix company.md or playbook.md.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="faq" aria-labelledby="faq-h">
+  <div class="wrap" style="max-width:900px">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-info"/></svg>Questions</span><h2 id="faq-h" class="h-l">Before you start.</h2></div>
+    <details class="faq"><summary>Do I need to write code?<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">No. For B2C and fundraising you edit text and short YAML lists in <code class="c">knowledge/</code>, plus your rules with your DPO. Claude Code can do the edits for you.</div></details>
+    <details class="faq"><summary>Can one team do B2B and B2C?<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Yes: put both kinds of segment in <code class="c">ontology.yaml</code> and limit each offer with <code class="c">fits.industries</code>. For two very different businesses, one repo each is easier to keep clean.</div></details>
+    <details class="faq"><summary>Where do B2C customers come from?<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">From your own lists only: bookings, purchases, enquiries and sign-ups, imported with <code class="c">/mama-ingest</code>. The web tells Sales Mama <i>when</i> (seasons, school terms, local events), never <i>who</i>.</div></details>
+    <details class="faq"><summary>Can I add a country beyond Singapore, Malaysia and India?<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Not by configuration: the scripts know three markets. Adding one is engine work in <code class="c">scripts/</code>.</div></details>
+    <details class="faq"><summary>Will updates to Sales Mama overwrite my changes?<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Your business lives in <code class="c">knowledge/</code>, <code class="c">reps/</code> and your rules. Engine updates touch <code class="c">scripts/</code> and skills, so pulling them rarely conflicts; git shows you anything that does.</div></details>
+    <details class="faq"><summary>Can I rename “account” and “lead” in the skills?<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">You don't need to: Claude reads your <code class="c">company.md</code> and speaks your language. If you want to, edit <code class="c">.agents/skills/</code> and run <code class="c">python3 scripts/sync_skills.py</code>.</div></details>
+  </div>
+</section>
+<div class="wrap blk-tight"><nav class="pager" aria-label="Next page"><a href="quickstart.html"><span><svg class="i i-sm flip" aria-hidden="true"><use href="#i-arrow-right"/></svg>Previous</span><b>Quickstart</b></a><a class="next" href="scenarios.html"><span>Next <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span><b>Scenarios</b></a></nav></div>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <a class="brand" href="index.html"><span class="logo">SM</span>Sales Mama</a>
+      <p>An open-source sales harness for Claude Code. Small B2B teams in Singapore, Malaysia and India. You approve every message.</p>
+    </div>
+    <div><h4>Site</h4><ul>
+      <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="customize.html">Customize</a></li><li><a href="scenarios.html">Scenarios</a></li>
+      <li><a href="end-to-end.html">End to end</a></li><li><a href="bench.html">Bench</a></li><li><a href="films.html">Films</a></li></ul></div>
+    <div><h4>Docs on GitHub</h4><ul>
+      <li><a href="https://github.com/neam-lang/sales-mama.ai#readme">README</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/GUIDE.md">Guide</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md">Setup</a></li>
+      <li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/AGENTS.md">Agent rules</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/SECURITY.md">Security</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/adr">Decisions (ADRs)</a></li></ul></div>
+    <div><h4>Watch and compare</h4><ul>
+      <li><a href="https://youtu.be/tv8dHNzE3ks">YouTube: Sales Mama</a></li><li><a href="films.html">All eleven films</a></li>
+      <li><a href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard">🤗 Sales Harness Leaderboard</a></li>
+      <li><a href="https://huggingface.co/datasets/praveengovi/sales-harness-bench">🤗 Sales Harness Bench dataset</a></li></ul></div>
+  </div>
+  <div class="foot-base">
+    <span>Apache 2.0</span>
+    <span>Screens and films use fictional demo data (Mei, Grace, Arun, Harbourlight Foods…).</span>
+  </div>
+</footer>
+
+<dialog class="player" id="player" aria-label="Film player">
+  <div class="player-in">
+    <video controls playsinline preload="none"></video>
+    <div class="pl-side">
+      <button class="x-btn" type="button" data-close aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <h3 data-pl-title>Film</h3>
+      <p class="sub" data-pl-sub></p>
+      <div data-pl-chl><p class="label">Chapters</p><ol class="chapters" data-pl-ch></ol></div>
+      <div class="pl-links">
+        <a data-pl-gh href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/assets/video"><svg class="i i-sm" aria-hidden="true"><use href="#i-github"/></svg>View this film on GitHub</a>
+        <a data-pl-dl href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/assets/video"><svg class="i i-sm" aria-hidden="true"><use href="#i-download"/></svg>Download the mp4</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="zoom" id="zoom" aria-label="Screenshot">
+  <div class="zoom-in">
+    <button class="x-btn" type="button" data-close aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <img alt="">
+    <div class="zoom-cap"><span data-zoom-cap></span><span class="row">
+      <button class="nav-btn" type="button" data-step="-1" aria-label="Previous"><svg class="i i-sm flip" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      <button class="nav-btn" type="button" data-step="1" aria-label="Next"><svg class="i i-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></button></span></div>
+  </div>
+</dialog>
+
+<dialog class="palette" id="palette" aria-label="Search or jump">
+  <div class="pal-in">
+    <label class="pal-q"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg><span class="sr">Search</span><input type="text" placeholder="Search pages, scenarios, commands, films…" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="pal-list"><kbd>esc</kbd></label>
+    <ul class="pal-list" id="pal-list" role="listbox"></ul>
+    <div class="pal-foot"><span><kbd>↑</kbd> <kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>/</kbd> or <kbd>⌘K</kbd> anywhere</span></div>
+  </div>
+</dialog>
+
+<script src="site/site.js" defer></script>
+</body>
+</html>

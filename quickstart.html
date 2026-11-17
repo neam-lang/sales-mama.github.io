@@ -36,12 +36,13 @@
 </header>
 
 <nav class="rail" aria-label="Site">
-    <a href="index.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span>Overview</a>
-    <a href="quickstart.html" aria-current="page"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span>Quickstart</a>
-    <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span>Scenarios</a>
-    <a href="end-to-end.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span>End to end</a>
-    <a href="bench.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span>Bench</a>
-    <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span>Films</a>
+    <a href="index.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span><span class="lbl">Overview</span><span class="lbl-s" aria-hidden="true">Home</span></a>
+    <a href="quickstart.html" aria-current="page"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span><span class="lbl">Quickstart</span><span class="lbl-s" aria-hidden="true">Start</span></a>
+    <a href="customize.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sliders-horizontal"/></svg></span><span class="lbl">Customize</span><span class="lbl-s" aria-hidden="true">Tune</span></a>
+    <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span><span class="lbl">Scenarios</span><span class="lbl-s" aria-hidden="true">Scenarios</span></a>
+    <a href="end-to-end.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span><span class="lbl">End to end</span><span class="lbl-s" aria-hidden="true">Flow</span></a>
+    <a href="bench.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span><span class="lbl">Bench</span><span class="lbl-s" aria-hidden="true">Bench</span></a>
+    <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span><span class="lbl">Films</span><span class="lbl-s" aria-hidden="true">Films</span></a>
     <span class="grow"></span>
     <a class="rail-extra" href="https://github.com/neam-lang/sales-mama.ai"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></span>Repo</a>
 </nav>
@@ -73,7 +74,7 @@
           <div class="card req a-writer"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-bot"/></svg></span><div><b>Claude Code</b><p>signed in (or Codex)</p></div></div>
           <div class="card req a-scout"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-monitor-smartphone"/></svg></span><div><b>Node 20+</b><p>optional, for the console</p></div></div>
         </div>
-        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>check your tools</div><pre><code>git --version
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">check your tools</span></div><pre><code>git --version
 python3 --version   <span class="cm"># 3.10 or newer</span>
 claude --version
 node --version      <span class="cm"># 20+, only for the console</span></code></pre></div>
@@ -82,7 +83,7 @@ node --version      <span class="cm"># 20+, only for the console</span></code></
       <li class="qs-step rv"><span class="qs-n">2</span><div class="qs-body">
         <div class="row"><h3>Get Sales Mama</h3><button class="t-btn" type="button" data-film="install" data-t="57"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>0:57 · watch</button></div>
         <p>The whole system is a folder: your team's knowledge, accounts and tools, kept in git.</p>
-        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>clone</div><pre><code>git clone https://github.com/neam-lang/sales-mama.ai.git
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">clone</span></div><pre><code>git clone https://github.com/neam-lang/sales-mama.ai.git
 cd sales-mama.ai
 python3 -c "import yaml" 2>/dev/null || python3 -m pip install --user pyyaml</code></pre></div>
         <div class="note a-amber"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Homebrew Python (PEP 668)? Add <code>--break-system-packages</code> to the pip line.</span></div>
@@ -91,14 +92,14 @@ python3 -c "import yaml" 2>/dev/null || python3 -m pip install --user pyyaml</co
       <li class="qs-step rv"><span class="qs-n">3</span><div class="qs-body">
         <div class="row"><h3>Check it works</h3><button class="t-btn" type="button" data-film="install" data-t="73"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>1:13 · watch</button></div>
         <p>The self-test runs every rule and tool on a copy of the demo data: sending, privacy, scoring, calendar, everything.</p>
-        <div class="code" data-copy="python3 scripts/selftest.py"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>self-test</div><pre><code>python3 scripts/selftest.py
+        <div class="code" data-copy="python3 scripts/selftest.py"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">self-test</span></div><pre><code>python3 scripts/selftest.py
 <span class="ok">213/213 passed</span></code></pre></div>
       </div></li>
 
       <li class="qs-step rv"><span class="qs-n">4</span><div class="qs-body">
         <div class="row"><h3>Set yourself up with Claude Code</h3><button class="t-btn" type="button" data-film="install" data-t="101"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>1:41 · watch</button></div>
         <p>Start Claude Code in the folder and ask in plain English. It checks your tools, then asks who you are, one question at a time.</p>
-        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>start Claude Code</div><pre><code>claude</code></pre></div>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">start Claude Code</span></div><pre><code>claude</code></pre></div>
         <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Set me up for Sales Mama</span></div>
         <p class="label" style="margin-top:4px">It asks for</p>
         <div class="asks">
@@ -114,7 +115,7 @@ python3 -c "import yaml" 2>/dev/null || python3 -m pip install --user pyyaml</co
       <li class="qs-step rv"><span class="qs-n">5</span><div class="qs-body">
         <div class="row"><h3>Open the console <span class="muted" style="font-weight:600;font-size:.7em">optional</span></h3><button class="t-btn" type="button" data-film="install" data-t="184"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>3:04 · watch</button></div>
         <p>The first run installs the console. Then open it in your browser: your own Today page, chat, calendar and book. It only renders; every change still goes through a skill.</p>
-        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>console</div><pre><code>npm run console     <span class="cm"># then open http://localhost:4173</span></code></pre></div>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">console</span></div><pre><code>npm run console     <span class="cm"># then open http://localhost:4173</span></code></pre></div>
         <div class="note a-allocator"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>Done. Your manager allocates accounts next. Each session starts with your queue: due follow-ups, hot accounts and quota left today.</span></div>
       </div></li>
     </ol>
@@ -129,7 +130,7 @@ python3 -c "import yaml" 2>/dev/null || python3 -m pip install --user pyyaml</co
       <p class="lede">Tokens stay in <code class="c">~/.config/sales-mama/</code>, never in the repo. Run the WhatsApp one with <code class="c">!</code> inside Claude Code so you type the token yourself.</p>
     </div>
     <div class="grid g2" style="align-items:start">
-      <div class="code" data-copy="python3 scripts/connect.py gmail --client-file <oauth-client.json>&#10;python3 scripts/connect.py status"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>channels</div><pre><code>python3 scripts/connect.py gmail --client-file &lt;oauth-client.json&gt;  <span class="cm"># browser opens, click Allow</span>
+      <div class="code" data-copy="python3 scripts/connect.py gmail --client-file <oauth-client.json>&#10;python3 scripts/connect.py status"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">channels</span></div><pre><code>python3 scripts/connect.py gmail --client-file &lt;oauth-client.json&gt;  <span class="cm"># browser opens, click Allow</span>
 ! python3 scripts/connect.py whatsapp                                <span class="cm"># you type the token</span>
 python3 scripts/connect.py status
 <span class="ok">Sending: off · Gmail ok · WhatsApp ok</span></code></pre></div>
@@ -170,7 +171,7 @@ python3 scripts/connect.py status
           <li>After DPO sign-off, turn sending on in <code class="c">knowledge/sending.yaml</code>.</li>
         </ol></div>
       <div class="grid" style="gap:14px">
-        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>paste into Claude Code</div><pre><code>Read GUIDE.md. Run python3 scripts/selftest.py, python3 scripts/lint.py, python3 scripts/session_start.py and python3 scripts/sync_skills.py --check, show me the results, then run the mama-setup skill for me as the manager.</code></pre></div>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">paste into Claude Code</span></div><pre><code>Read GUIDE.md. Run python3 scripts/selftest.py, python3 scripts/lint.py, python3 scripts/session_start.py and python3 scripts/sync_skills.py --check, show me the results, then run the mama-setup skill for me as the manager.</code></pre></div>
         <div class="note a-allocator"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><span><b>Add a rep:</b> give them repo access. They type “Set me up for Sales Mama from https://github.com/neam-lang/sales-mama.ai”.</span></div>
       </div>
     </div></div>
@@ -182,7 +183,7 @@ python3 scripts/connect.py status
     </div></div>
     <div role="tabpanel" id="p-cdx" aria-labelledby="t-cdx" hidden><div class="grid g2" style="align-items:start">
       <div class="card"><h3>Codex reads the same rules</h3><p style="margin:10px 0 0">Codex reads <code class="c">AGENTS.md</code> and <code class="c">.agents/skills/</code>; call skills as <code class="c">$mama-day</code> or in plain English. It has no hooks or ask rules, so it runs the session scripts itself, and <code class="c">/mama-send</code> stops at the preview for you to send.</p></div>
-      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>Codex sessions</div><pre><code>python3 scripts/session_start.py   <span class="cm"># at the start</span>
+      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">Codex sessions</span></div><pre><code>python3 scripts/session_start.py   <span class="cm"># at the start</span>
 python3 scripts/sync.py            <span class="cm"># at the end</span></code></pre></div>
     </div></div>
   </div>
@@ -214,7 +215,7 @@ python3 scripts/sync.py            <span class="cm"># at the end</span></code></
         <h2 id="health-h" class="h-l">Know it's working.</h2>
         <p class="lede">Run these any time. Every pilot mistake becomes a failing eval case before it is fixed.</p>
       </div>
-      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>checks</div><pre><code>python3 scripts/selftest.py        <span class="cm"># <span class="ok">213/213</span></span>
+      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">checks</span></div><pre><code>python3 scripts/selftest.py        <span class="cm"># <span class="ok">213/213</span></span>
 python3 scripts/eval.py            <span class="cm"># 15 pass · 0 fail · 8 pending</span>
 python3 scripts/lint.py            <span class="cm"># 0 errors</span>
 python3 scripts/connect.py status  <span class="cm"># channels and sending</span></code></pre></div>
@@ -240,7 +241,7 @@ python3 scripts/connect.py status  <span class="cm"># channels and sending</span
 <details class="faq"><summary>The console doesn't start<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">It needs Node 20+ and a signed-in <code class="c">claude</code> CLI. The first run installs its dependencies; then open <code class="c">http://localhost:4173</code>.</div></details>
   </div>
 </section>
-<div class="wrap blk-tight"><nav class="pager" aria-label="Next page"><a href="index.html"><span><svg class="i i-sm flip" aria-hidden="true"><use href="#i-arrow-right"/></svg>Previous</span><b>Overview</b></a><a class="next" href="scenarios.html"><span>Next <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span><b>Scenarios</b></a></nav></div>
+<div class="wrap blk-tight"><nav class="pager" aria-label="Next page"><a href="index.html"><span><svg class="i i-sm flip" aria-hidden="true"><use href="#i-arrow-right"/></svg>Previous</span><b>Overview</b></a><a class="next" href="customize.html"><span>Next <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span><b>Customize</b></a></nav></div>
 
 </main>
 
@@ -251,7 +252,7 @@ python3 scripts/connect.py status  <span class="cm"># channels and sending</span
       <p>An open-source sales harness for Claude Code. Small B2B teams in Singapore, Malaysia and India. You approve every message.</p>
     </div>
     <div><h4>Site</h4><ul>
-      <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="scenarios.html">Scenarios</a></li>
+      <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="customize.html">Customize</a></li><li><a href="scenarios.html">Scenarios</a></li>
       <li><a href="end-to-end.html">End to end</a></li><li><a href="bench.html">Bench</a></li><li><a href="films.html">Films</a></li></ul></div>
     <div><h4>Docs on GitHub</h4><ul>
       <li><a href="https://github.com/neam-lang/sales-mama.ai#readme">README</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/GUIDE.md">Guide</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md">Setup</a></li>

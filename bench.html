@@ -36,12 +36,13 @@
 </header>
 
 <nav class="rail" aria-label="Site">
-    <a href="index.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span>Overview</a>
-    <a href="quickstart.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span>Quickstart</a>
-    <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span>Scenarios</a>
-    <a href="end-to-end.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span>End to end</a>
-    <a href="bench.html" aria-current="page"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span>Bench</a>
-    <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span>Films</a>
+    <a href="index.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span><span class="lbl">Overview</span><span class="lbl-s" aria-hidden="true">Home</span></a>
+    <a href="quickstart.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span><span class="lbl">Quickstart</span><span class="lbl-s" aria-hidden="true">Start</span></a>
+    <a href="customize.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sliders-horizontal"/></svg></span><span class="lbl">Customize</span><span class="lbl-s" aria-hidden="true">Tune</span></a>
+    <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span><span class="lbl">Scenarios</span><span class="lbl-s" aria-hidden="true">Scenarios</span></a>
+    <a href="end-to-end.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span><span class="lbl">End to end</span><span class="lbl-s" aria-hidden="true">Flow</span></a>
+    <a href="bench.html" aria-current="page"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span><span class="lbl">Bench</span><span class="lbl-s" aria-hidden="true">Bench</span></a>
+    <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span><span class="lbl">Films</span><span class="lbl-s" aria-hidden="true">Films</span></a>
     <span class="grow"></span>
     <a class="rail-extra" href="https://github.com/neam-lang/sales-mama.ai"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></span>Repo</a>
 </nav>
@@ -130,12 +131,12 @@
     <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-square-terminal"/></svg>Benchmark your own harness</span><h2 id="run-h" class="h-l">Clone, run, open a pull request.</h2>
       <p class="lede">An adapter is any command run as <code class="c">&lt;cmd&gt; &lt;sandbox&gt;</code>: it reads <code class="c">TASK.md</code> and acts only through <code class="c">mama-tool</code>. The oracle must score 100 and the null adapter 0 before you trust a run.</p></div>
     <div class="grid g2" style="align-items:start">
-      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>sanity first</div><pre><code>git clone https://huggingface.co/datasets/praveengovi/sales-harness-bench
+      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">sanity first</span></div><pre><code>git clone https://huggingface.co/datasets/praveengovi/sales-harness-bench
 cd sales-harness-bench
 python -m shb.run --adapter oracle --out runs/oracle.json   <span class="cm"># must be 100, 0 violations</span>
 python -m shb.run --adapter null   --out runs/null.json     <span class="cm"># must be 0</span>
 python tests/sanity.py                                      <span class="cm"># oracle / null / unsafe checks</span></code></pre></div>
-      <div class="code" data-copy="python -m shb.run --adapter adapters/claude_code.sh --model <model-id> --trials 3 --out runs/mine.json"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>then your harness</div><pre><code>python -m shb.run --adapter adapters/claude_code.sh \
+      <div class="code" data-copy="python -m shb.run --adapter adapters/claude_code.sh --model <model-id> --trials 3 --out runs/mine.json"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">then your harness</span></div><pre><code>python -m shb.run --adapter adapters/claude_code.sh \
   --model &lt;model-id&gt; --trials 3 --out runs/mine.json</code></pre></div>
     </div>
     <div class="row" style="margin-top:20px">
@@ -158,7 +159,7 @@ python tests/sanity.py                                      <span class="cm"># o
 <section class="blk-tight" id="cite" aria-labelledby="cite-h">
   <div class="wrap" style="max-width:860px">
     <p class="label" id="cite-h" style="margin-bottom:12px">Cite</p>
-    <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>BibTeX</div><pre><code>@misc{{sales_harness_leaderboard_2026,
+    <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span><span class="ch-t">BibTeX</span></div><pre><code>@misc{{sales_harness_leaderboard_2026,
   title  = {{Sales Harness Leaderboard: SalesHarnessBench (SHB-SEA)}},
   author = {{Govindaraj, Praveen}},
   year   = {{2026}},
@@ -178,7 +179,7 @@ python tests/sanity.py                                      <span class="cm"># o
       <p>An open-source sales harness for Claude Code. Small B2B teams in Singapore, Malaysia and India. You approve every message.</p>
     </div>
     <div><h4>Site</h4><ul>
-      <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="scenarios.html">Scenarios</a></li>
+      <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="customize.html">Customize</a></li><li><a href="scenarios.html">Scenarios</a></li>
       <li><a href="end-to-end.html">End to end</a></li><li><a href="bench.html">Bench</a></li><li><a href="films.html">Films</a></li></ul></div>
     <div><h4>Docs on GitHub</h4><ul>
       <li><a href="https://github.com/neam-lang/sales-mama.ai#readme">README</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/GUIDE.md">Guide</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md">Setup</a></li>

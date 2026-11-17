@@ -176,6 +176,18 @@
     });
   });
 
+  /* ── Customize page: one switch shows B2C or fundraising examples everywhere on the page. ── */
+  function setMode(m) {
+    $$('.cz').forEach(function (c) { c.setAttribute('data-mode', m); });
+    $$('[data-mode-set]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-mode-set') === m)); });
+  }
+  $$('[data-mode-set]').forEach(function (b) { b.addEventListener('click', function () { setMode(b.getAttribute('data-mode-set')); }); });
+  if ($('.cz')) {
+    var hm = function () { if (location.hash === '#fund') setMode('fund'); else if (location.hash === '#b2c') setMode('b2c'); };
+    hm(); window.addEventListener('hashchange', hm);
+    $$('a[href="#fund"], a[href="#b2c"]').forEach(function (a) { a.addEventListener('click', function () { setMode(a.getAttribute('href').slice(1)); }); });
+  }
+
   /* ── Image zoom (gallery and scenario screens) ── */
   var zoom = $('#zoom'), group = [], gi = 0;
   function showZoom() {
@@ -209,6 +221,7 @@
   var PAGES = [
     ['Overview', 'index.html', 'sun', 'Signal to send. You approve each one.'],
     ['Quickstart', 'quickstart.html', 'rocket', 'Install, set up, connect Gmail and WhatsApp'],
+    ['Customize', 'customize.html', 'sliders-horizontal', 'Tune Sales Mama for B2C or fundraising: which files to edit'],
     ['Scenarios', 'scenarios.html', 'clapperboard', 'Ten real scenarios, step by step'],
     ['End to end', 'end-to-end.html', 'workflow', 'From a signal at 2 am to a reply at 10'],
     ['Bench', 'bench.html', 'trophy', 'The Sales Mama score on the Sales Harness Bench'],
@@ -217,7 +230,10 @@
   var IDX = PAGES.map(function (p) { return { t: p[0], s: p[3], u: p[1], i: p[2], k: 'Page' }; }).concat([
     ['Why Sales Mama', 'index.html#why', 'target'], ['How it works', 'index.html#how', 'layers'], ['Approve, then send', 'index.html#send', 'shield-check'],
     ['The console', 'index.html#console', 'monitor-smartphone'], ['A day with Sales Mama', 'index.html#scenarios', 'clock'],
-    ['Install in five steps', 'quickstart.html#steps', 'square-terminal'], ['Connect Gmail and WhatsApp', 'quickstart.html#connect', 'plug'],
+    ['Install in five steps', 'quickstart.html#steps', 'square-terminal'],
+    ['Customize for B2C small business', 'customize.html#b2c', 'store'], ['Customize for non-profit fundraising', 'customize.html#fund', 'heart-handshake'],
+    ['Open Sales Mama in VS Code', 'customize.html#workspace', 'code-xml'], ['Which files to edit, step by step', 'customize.html#files', 'file-pen-line'],
+    ['External websites to search', 'customize.html#sites', 'globe'], ['Ask Claude Code to tune it for you', 'customize.html#ways', 'sparkles'], ['Connect Gmail and WhatsApp', 'quickstart.html#connect', 'plug'],
     ['Set up as the manager', 'quickstart.html#roles', 'users'], ['Nightly runner', 'quickstart.html#roles', 'moon-star'], ['Using Codex', 'quickstart.html#roles', 'terminal'],
     ['Your first five prompts', 'quickstart.html#first', 'message-square'], ['Health checks', 'quickstart.html#health', 'gauge'], ['Troubleshooting', 'quickstart.html#trouble', 'info'],
     ['Day one: install and set up', 'scenarios.html#day-one', 'rocket'], ['Plan the morning', 'scenarios.html#morning', 'sun'],
