@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>End to end · Sales Mama</title>
+<meta name="description" content="From a signal at 2 am to a reply at 10: every stage, who does it, what it writes and what stops it going wrong.">
+<meta name="theme-color" content="#16131F">
+<link rel="canonical" href="https://neam-lang.github.io/sales-mama.github.io/end-to-end.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="End to end · Sales Mama">
+<meta property="og:description" content="From a signal at 2 am to a reply at 10: every stage, who does it, what it writes and what stops it going wrong.">
+<meta property="og:url" content="https://neam-lang.github.io/sales-mama.github.io/end-to-end.html">
+<meta property="og:image" content="https://neam-lang.github.io/sales-mama.github.io/assets/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site/site.css">
+<script>try{var t=localStorage.getItem('sm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<script src="site/icons.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Sales Mama home"><span class="logo">SM</span>Sales Mama</a>
+  <div class="mk-pills" aria-label="Live send windows"><span class="mk-pill" data-market="SG"><span class="mk SG">SG</span><b data-now>--:--</b><span class="st" data-st>send window</span></span><span class="mk-pill" data-market="MY"><span class="mk MY">MY</span><b data-now>--:--</b><span class="st" data-st>send window</span></span><span class="mk-pill" data-market="IN"><span class="mk IN">IN</span><b data-now>--:--</b><span class="st" data-st>send window</span></span></div>
+  <button class="jump" type="button" data-jump aria-label="Search or jump (Command K)"><svg class="i i-sm" aria-hidden="true"><use href="#i-search"/></svg><span>Search or jump…</span><kbd>⌘K</kbd></button>
+  <div class="top-actions">
+    <button class="icon-btn jump-icon" type="button" data-jump aria-label="Search or jump"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></button>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark"><svg class="i" aria-hidden="true"><use href="#i-contrast"/></svg></button>
+    <a class="gh-btn" href="https://github.com/neam-lang/sales-mama.ai"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span></a>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Site">
+    <a href="index.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span>Overview</a>
+    <a href="quickstart.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span>Quickstart</a>
+    <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span>Scenarios</a>
+    <a href="end-to-end.html" aria-current="page"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span>End to end</a>
+    <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span>Films</a>
+    <span class="grow"></span>
+    <a class="rail-extra" href="https://github.com/neam-lang/sales-mama.ai"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></span>Repo</a>
+</nav>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Overview</a><svg class="i i-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg><span>End to end</span></nav>
+    <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-workflow"/></svg>End to end</span>
+    <h1 class="h-xl">From a signal at 2 am<br>to a reply at 10.</h1>
+    <p class="lede">Every stage of the loop: who does it, what it writes, and what stops it going wrong.</p>
+    <div class="toc">
+      <a class="chip chip-line" href="#loop"><svg class="i i-sm" aria-hidden="true"><use href="#i-route"/></svg>The loop</a><a class="chip chip-line" href="#roles"><svg class="i i-sm" aria-hidden="true"><use href="#i-users"/></svg>Who does what</a>
+      <a class="chip chip-line" href="#repo"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-git-2"/></svg>The repo</a><a class="chip chip-line" href="#markets"><svg class="i i-sm" aria-hidden="true"><use href="#i-globe"/></svg>Markets</a>
+      <a class="chip chip-line" href="#guardrails"><svg class="i i-sm" aria-hidden="true"><use href="#i-shield"/></svg>Guardrails</a><a class="chip chip-line" href="#commands"><svg class="i i-sm" aria-hidden="true"><use href="#i-command"/></svg>Commands</a>
+      <a class="chip chip-line" href="#quality"><svg class="i i-sm" aria-hidden="true"><use href="#i-trophy"/></svg>Quality</a><a class="chip chip-line" href="#docs"><svg class="i i-sm" aria-hidden="true"><use href="#i-book-open"/></svg>Docs</a>
+    </div>
+  </div>
+</section>
+
+<section class="blk-tight" id="loop" aria-labelledby="loop-h">
+  <div class="wrap">
+    <h2 id="loop-h" class="sr">The loop, stage by stage</h2>
+    <div class="phase"><div class="phase-h"><span class="tm">02:00</span><h3>Overnight</h3><p>The runner, under the manager's identity. It never sends.</p></div><div class="flow"><div class="fstep a-scout rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-radar"/></svg></span><div>
+            <h4><span class="n">01</span>Scan<span class="role">Scout</span><span class="cmd">/mama-scan</span></h4>
+            <p>Scout subagents read the sources in <code class="c">knowledge/sources.yaml</code> (news, tenders, registries, events) within each source's caps, and snapshot each finding to <code class="c">raw/signals/</code>.</p><div class="kv"><span class="cmd plain">knowledge/sources.yaml</span><span class="cmd plain">raw/signals/</span><span class="cmd plain">log/signals.csv</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Headline, URL, date and a summary of at most 60 words. No full articles, no paywalls, no LinkedIn scraping.</span></div></div></div><div class="fstep a-scout rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-link"/></svg></span><div>
+            <h4><span class="n">02</span>Resolve<span class="role">resolve.py</span></h4>
+            <p>Each signal is matched to an account by registry ID (UEN, SSM, CIN), then domain, then normalised name and city.</p><div class="kv"><span class="cmd plain">scripts/resolve.py</span><span class="cmd plain">log/review.csv</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Confidence 0.90 or more links; 0.70–0.90 goes to the manager's review queue. Never linked by guesswork.</span></div></div></div><div class="fstep a-mama rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-chart-column"/></svg></span><div>
+            <h4><span class="n">03</span>Score<span class="role">score.py</span></h4>
+            <p>Accounts are rescored from fit, intent and engagement, with the parts written next to the score. Tiers A · B · C.</p><div class="kv"><span class="cmd plain">knowledge/scoring.yaml</span><span class="cmd plain">scripts/score.py</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Maths in scripts, judgement in the model: every score is explainable and reproducible.</span></div></div></div><div class="fstep a-vam rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg></span><div>
+            <h4><span class="n">04</span>Watch every book<span class="role">VAM</span><span class="cmd">/mama-vam</span></h4>
+            <p>A virtual account manager per book sets risk, the next best action and its reason, and pre-drafts due follow-ups as text.</p><div class="kv"><span class="cmd plain">wiki/accounts/*.md · ## VAM notes</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>VAMs never contact anyone and never change owner or stage; lint checks their fields.</span></div></div></div><div class="fstep a-allocator rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-scale"/></svg></span><div>
+            <h4><span class="n">05</span>Propose an allocation<span class="role">Allocator</span><span class="cmd">/mama-allocate</span></h4>
+            <p>Expected value per rep and lead, hard constraints (capacity, territory, market, suppression) and a fairness pass, with a reason per lead.</p><div class="kv"><span class="cmd plain">knowledge/allocation.yaml</span><span class="cmd plain">log/allocation/&lt;date&gt;.md</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Nothing is assigned until the manager approves (claim.py --assign). Reps may self-claim tier C only.</span></div></div></div></div></div><div class="phase"><div class="phase-h"><span class="tm">08:30</span><h3>Morning</h3><p>The manager decides, then each rep runs the day.</p></div><div class="flow"><div class="fstep a-allocator rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-gauge"/></svg></span><div>
+            <h4><span class="n">06</span>Approve and clear the queue<span class="role">Manager</span><span class="cmd">/mama-manager</span></h4>
+            <p>The morning cockpit: last night's run, hot accounts, risks, the allocation proposal and the entity review queue.</p><div class="kv"><span class="cmd plain">log/briefs/</span><span class="cmd plain">wiki/books/team.md</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Only the manager's approval assigns tier A and B leads.</span></div></div></div><div class="fstep a-researcher rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-scan-search"/></svg></span><div>
+            <h4><span class="n">07</span>Research<span class="role">Researcher</span><span class="cmd">/mama-research</span></h4>
+            <p>Researcher subagents (up to five in parallel) study owned accounts and update the page with cited signals, pains and contacts.</p><div class="kv"><span class="cmd plain">wiki/accounts/&lt;id&gt;.md</span><span class="cmd plain">wiki/contacts/</span><span class="cmd plain">raw/</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Every account fact links a raw/ snapshot, or says “unknown”. Business contact details only.</span></div></div></div><div class="fstep a-mama rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-target"/></svg></span><div>
+            <h4><span class="n">08</span>Recommend<span class="role">Mama</span><span class="cmd">/mama-recommend</span></h4>
+            <p>Picks best-fit products from your catalogue with a traceable chain: signal → pain → product → proof.</p><div class="kv"><span class="cmd plain">knowledge/products/</span><span class="cmd plain">knowledge/proof/</span><span class="cmd plain">knowledge/ontology.yaml</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Only products in knowledge/products and proof in knowledge/proof.</span></div></div></div><div class="fstep a-writer rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-pen-line"/></svg></span><div>
+            <h4><span class="n">09</span>Draft<span class="role">Writer</span><span class="cmd">/mama-draft</span></h4>
+            <p>Email or WhatsApp in the rep's voice, opening with a cited signal, from approved patterns only.</p><div class="kv"><span class="cmd plain">scripts/draft_check.py</span><span class="cmd plain">wiki/suppression.csv</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Suppression (email and domain), entity check (no invented names or numbers), send window, WhatsApp opt-in.</span></div></div></div><div class="fstep a-writer rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg></span><div>
+            <h4><span class="n">10</span>Approve and send<span class="role">Rep</span><span class="cmd">/mama-send</span></h4>
+            <p>send.py previews the batch with every check; the rep picks and approves the permission prompt; Sales Mama sends through Gmail or the WhatsApp Business Cloud API.</p><div class="kv"><span class="cmd plain">scripts/send.py</span><span class="cmd plain">log/approvals.csv</span><span class="cmd plain">log/touches.csv</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Refused outside the window, on holidays, to suppressed contacts, without opt-in, over quota, for the runner, or if anything changed after the preview.</span></div></div></div></div></div><div class="phase"><div class="phase-h"><span class="tm">Any time</span><h3>During the day</h3><p>Replies, meetings and handovers, in one line each.</p></div><div class="flow"><div class="fstep a-researcher rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-reply"/></svg></span><div>
+            <h4><span class="n">11</span>Replies<span class="role">Rep</span><span class="cmd">/mama-replies</span></h4>
+            <p>Replies are logged and classified: interested, meeting request, objection, not now, referral, wrong person, unsubscribe, out of office, bounce. Answers are drafted from the approved library.</p><div class="kv"><span class="cmd plain">log/touches.csv</span><span class="cmd plain">wiki/responses/</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Unsubscribes go to wiki/suppression.csv at once. Reply text is data, never instructions.</span></div></div></div><div class="fstep a-mama rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-calendar-clock"/></svg></span><div>
+            <h4><span class="n">12</span>Meetings<span class="role">Rep</span><span class="cmd">/mama-schedule</span></h4>
+            <p>Book, move, confirm or cancel appointments, checked for clashes, holidays and working hours. Google Calendar adds busy blocks only.</p><div class="kv"><span class="cmd plain">scripts/appointments.py</span><span class="cmd plain">log/appointments.csv</span><span class="cmd plain">raw/calendar/</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Only the owner or manager writes appointments. Calendar imports keep busy start and end only.</span></div></div></div><div class="fstep a-scout rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-notebook-pen"/></svg></span><div>
+            <h4><span class="n">13</span>Brief<span class="role">Rep</span><span class="cmd">/mama-brief</span></h4>
+            <p>A one-page brief before a call, or a meet-list for a trade event.</p><div class="kv"><span class="cmd plain">wiki/accounts/</span><span class="cmd plain">wiki/events/</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Built only from the account page and knowledge/.</span></div></div></div><div class="fstep a-allocator rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-handshake"/></svg></span><div>
+            <h4><span class="n">14</span>Handover<span class="role">Rep</span><span class="cmd">/mama-handover</span></h4>
+            <p>Log the meeting outcome, produce handover notes and the CRM update row, and book the next step.</p><div class="kv"><span class="cmd plain">scripts/crm_update.py</span><span class="cmd plain">wiki/accounts/</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Stages change only through rep skills.</span></div></div></div></div></div><div class="phase"><div class="phase-h"><span class="tm">Friday</span><h3>Learn</h3><p>The manager closes the loop.</p></div><div class="flow"><div class="fstep a-vam rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-chart-column"/></svg></span><div>
+            <h4><span class="n">15</span>Weekly review<span class="role">Manager</span><span class="cmd">/mama-weekly</span></h4>
+            <p>Lint, funnel, reply and meeting rates, score calibration, allocation fairness, library and ontology proposals, retention clean-up, as a report and a PR.</p><div class="kv"><span class="cmd plain">scripts/weekly.py</span><span class="cmd plain">log/weekly/</span></div>
+            <div class="guard"><svg class="i" aria-hidden="true"><use href="#i-shield-check"/></svg><span>Tier A should meet at least twice as often as tier C, or scoring is recalibrated.</span></div></div></div></div></div>
+  </div>
+</section>
+
+<section class="blk" id="roles" aria-labelledby="roles-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-users"/></svg>Who does what</span><h2 id="roles-h" class="h-l">People decide. Agents prepare.</h2>
+      <p class="lede">One manager and up to five reps. Subagents run at most five in parallel. “Lead” always means a sales prospect.</p></div>
+    <div class="grid g4">
+      <div class="card a-mama rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span><h3 style="margin:14px 0 8px">Rep</h3><p>Owns accounts and approves every send. Plans the day, researches, drafts, books meetings, logs handovers.</p></div>
+      <div class="card a-allocator rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span><h3 style="margin:14px 0 8px">Manager</h3><p>Owns <code class="c">knowledge/</code>, approves allocations and library changes, runs the cockpit and the weekly review.</p></div>
+      <div class="card a-vam rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-moon-star"/></svg></span><h3 style="margin:14px 0 8px">Nightly runner</h3><p>One always-on machine under the manager's identity: scan, score, VAMs, proposal, brief, lint, sync. Never sends.</p></div>
+      <div class="card card-ink rv"><span class="sq" style="background:var(--lime);color:#16131F"><svg class="i" aria-hidden="true"><use href="#i-bot"/></svg></span><h3 style="margin:14px 0 8px">Subagents</h3><p><b style="color:#fff">Scout</b> per source group, <b style="color:#fff">researcher</b> per account, <b style="color:#fff">VAM</b> per book, <b style="color:#fff">verifier</b> per company check.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="repo" aria-labelledby="repo-h">
+  <div class="wrap">
+    <div class="grid g2" style="gap:40px;align-items:center">
+      <div class="sec-head" style="margin:0"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-folder-git-2"/></svg>The repo is the system</span><h2 id="repo-h" class="h-l">Markdown, YAML and CSV in git.</h2>
+        <p class="lede">No servers, no database. The wiki is the memory; every change has an author and a history. Each session starts with a pull and ends with a sync, and Sales Mama never force-pushes.</p>
+        <div class="note a-scout"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Session start (a Claude Code hook) pulls, rebuilds the index and books, and prints your queue. A write guard keeps reps inside their own book.</span></div></div>
+      <div class="code" data-nocopy><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>sales-mama.ai/</div><pre class="tree"><code><span class="d">knowledge/</span>      <span class="cm"># curated truth: company, ICP, markets, products, proof, rules</span>
+<span class="d">raw/</span>            <span class="cm"># immutable sources: signals, lists, CRM, calendar busy blocks</span>
+<span class="d">wiki/</span>           <span class="cm"># accounts, contacts, events, responses, books, log</span>
+<span class="d">log/</span>            <span class="cm"># touches, signals, review, approvals, appointments, briefs</span>
+<span class="d">reps/</span>           <span class="cm"># one profile per person: role, markets, capacity, tone</span>
+<span class="d">company-check/</span>  <span class="cm"># registry index, reports, cited evidence</span>
+<span class="d">scripts/</span>        <span class="cm"># the maths: score, resolve, allocate, send, lint …</span>
+<span class="d">.agents/skills/</span> <span class="cm"># 21 skills, mirrored to .claude/skills/</span>
+<span class="d">console/</span>        <span class="cm"># optional local console; renders only</span>
+AGENTS.md       <span class="cm"># the 17 hard rules every agent follows</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="markets" aria-labelledby="markets-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-globe"/></svg>Three markets</span><h2 id="markets-h" class="h-l">Each market keeps its own clock.</h2>
+      <p class="lede">Send windows and holidays apply in the market's time zone, with its own channels, languages and guardrails. The status below is live.</p></div>
+    <div class="grid g3">
+      <div class="card mkt rv" data-market="SG">
+          <div class="mkt-top"><span class="mk SG">SG</span><b>Singapore</b></div>
+          <span class="live-st"><span data-st>send window</span>&nbsp;· now <span data-now>--:--</span></span>
+          <dl><dt>Send window</dt><dd>Mon–Thu 09:00–11:30</dd><dt>Time zone</dt><dd>Asia/Singapore</dd><dt>Channels</dt><dd>Email, WhatsApp (opt-in), LinkedIn by hand</dd><dt>Languages</dt><dd>English, Chinese</dd><dt>Registry IDs</dt><dd>UEN</dd><dt>Status</dt><dd>Live (pilot)</dd></dl>
+        </div>
+      <div class="card mkt rv" data-market="MY">
+          <div class="mkt-top"><span class="mk MY">MY</span><b>Malaysia</b></div>
+          <span class="live-st"><span data-st>send window</span>&nbsp;· now <span data-now>--:--</span></span>
+          <dl><dt>Send window</dt><dd>Mon–Thu 09:30–11:30</dd><dt>Time zone</dt><dd>Asia/Kuala_Lumpur</dd><dt>Channels</dt><dd>Email, WhatsApp (opt-in), LinkedIn by hand</dd><dt>Languages</dt><dd>English, Malay, Chinese</dd><dt>Registry IDs</dt><dd>SSM no.</dd><dt>Status</dt><dd>Next</dd></dl>
+        </div>
+      <div class="card mkt rv" data-market="IN">
+          <div class="mkt-top"><span class="mk IN">IN</span><b>India</b></div>
+          <span class="live-st"><span data-st>send window</span>&nbsp;· now <span data-now>--:--</span></span>
+          <dl><dt>Send window</dt><dd>Mon–Fri 10:00–12:30</dd><dt>Time zone</dt><dd>Asia/Kolkata</dd><dt>Channels</dt><dd>Email, WhatsApp (opt-in), LinkedIn by hand, phone talk track</dd><dt>Languages</dt><dd>English, Hindi</dd><dt>Registry IDs</dt><dd>CIN · LLPIN · GSTIN · Udyam</dd><dt>Status</dt><dd>Later (DPDP consent first)</dd></dl>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="guardrails" aria-labelledby="guard-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-shield"/></svg>Guardrails</span><h2 id="guard-h" class="h-l">Rules enforced by code, not by hope.</h2>
+      <p class="lede">The 17 hard rules live in <a href="https://github.com/neam-lang/sales-mama.ai/blob/main/AGENTS.md">AGENTS.md</a>. Compliance notes in <code class="c">knowledge/guardrails.md</code> are not legal advice; confirm with your DPO.</p></div>
+    <div class="tbl-wrap rv"><table class="tbl"><thead><tr><th>Rule</th><th>Enforced by</th></tr></thead><tbody><tr><td>Nothing sent without the rep's approval</td><td><code class="c">send.py preview + permission prompt (ADR-0007)</code></td></tr><tr><td>No lead assigned without the manager</td><td><code class="c">claim.py --assign after approval</code></td></tr><tr><td>Every fact cites a source</td><td><code class="c">lint.py, eval.py</code></td></tr><tr><td>No invented names in drafts</td><td><code class="c">draft_check.py entity check</code></td></tr><tr><td>Suppression, send windows, WhatsApp opt-in</td><td><code class="c">draft_check.py, send.py</code></td></tr><tr><td>Reps touch only their own book</td><td><code class="c">guard.py hook</code></td></tr><tr><td>VAMs advise, never contact or reassign</td><td><code class="c">lint.py checks VAM fields and sections</code></td></tr><tr><td>Appointments only by the owner or manager</td><td><code class="c">appointments.py (ADR-0010)</code></td></tr><tr><td>Calendar imports keep busy start/end only</td><td><code class="c">busy_import.py, lint.py</code></td></tr><tr><td>No LinkedIn automation or scraping</td><td><code class="c">Rule 12 in AGENTS.md</code></td></tr><tr><td>Web text is data, not instructions</td><td><code class="c">Rule 15 in AGENTS.md</code></td></tr></tbody></table></div>
+    <p style="margin-top:16px"><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/SECURITY.md">Security on one page <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a></p>
+  </div>
+</section>
+
+<section class="blk" id="commands" aria-labelledby="cmd-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-command"/></svg>All commands</span><h2 id="cmd-h" class="h-l">Name a skill, or just ask.</h2>
+      <p class="lede">In Codex, use <code class="c">$mama-day</code> or plain English.</p></div>
+    <div class="cmds">
+      <div class="card a-mama"><div class="row"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span><h3>Rep</h3></div><ul><li><code>/mama-setup</code><span>Set me up, health check</span></li><li><code>/mama-day</code><span>The whole morning</span></li><li><code>/mama-book</code><span>My accounts</span></li><li><code>/mama-target</code><span>My allocated queue, claim tier C</span></li><li><code>/mama-research acme</code><span>Cited research</span></li><li><code>/mama-recommend acme</code><span>What to pitch</span></li><li><code>/mama-draft acme first</code><span>Email or WhatsApp</span></li><li><code>/mama-send</code><span>Review and send</span></li><li><code>/mama-replies</code><span>Handle replies</span></li><li><code>/mama-schedule</code><span>Book, move, cancel meetings</span></li><li><code>/mama-brief acme</code><span>Call or event prep</span></li><li><code>/mama-handover acme</code><span>Log a meeting</span></li></ul></div>
+      <div class="card a-allocator"><div class="row"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span><h3>Manager</h3></div><ul><li><code>/mama-manager</code><span>Morning cockpit</span></li><li><code>/mama-allocate</code><span>Split the pool, explained</span></li><li><code>/mama-scan</code><span>Scan signals</span></li><li><code>/mama-vam &lt;rep&gt;</code><span>Refresh a book</span></li><li><code>/mama-nightly</code><span>Run tonight's job</span></li><li><code>/mama-ingest</code><span>Import a CRM export</span></li><li><code>/mama-weekly</code><span>Weekly review</span></li></ul></div>
+      <div class="card a-scout"><div class="row"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-badge-check"/></svg></span><h3>Anyone</h3></div><ul><li><code>/company-check &lt;UEN|name&gt;</code><span>Is this company real?</span></li><li><code>/company-check leads</code><span>Ranked new ICP leads</span></li><li><code>/company-insights …</code><span>Stats, charts, tables</span></li><li><code>npm run console</code><span>The local console (optional)</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="quality" aria-labelledby="q-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-trophy"/></svg>Quality</span><h2 id="q-h" class="h-l">Tested, evaluated, benchmarked.</h2>
+      <p class="lede">Every pilot mistake becomes a failing eval case before it is fixed. Sales Mama is also the reference harness for the open Sales Harness Bench.</p></div>
+    <div class="bench">
+      <div class="stat tint a-allocator rv"><b>213<small>/213</small></b><span>self-test checks</span></div>
+      <div class="stat rv"><b>15</b><span>eval cases passing · 0 failing · 8 pending</span></div>
+      <div class="stat dark rv"><b>92.1</b><span>Sales Harness Bench: Claude Code with this kit, vs 90.0 vanilla, same model, tied at rank 1, zero violations</span></div>
+    </div>
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card a-scout"><h3>Sales Harness Bench (SHB-SEA) v0.1</h3><p style="margin:8px 0 14px">143 dev tasks, 4 live tracks, 9 critical violation types that zero a task, Singapore, Malaysia and India, 6 languages. All tasks use fictional data.</p>
+        <div class="row"><a class="btn btn-ink btn-sm" href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard"><svg class="i i-sm" aria-hidden="true"><use href="#i-trophy"/></svg>Leaderboard</a><a class="btn btn-line btn-sm" href="https://huggingface.co/datasets/praveengovi/sales-harness-bench"><svg class="i i-sm" aria-hidden="true"><use href="#i-database"/></svg>Benchmark kit</a></div></div>
+      <div class="grid g2" style="gap:14px">
+        <button class="film" type="button" data-film="bench1"><span class="poster"><img src="assets/video/bench1-thumb.jpg" alt="" loading="lazy"><span class="play"><svg class="i" aria-hidden="true"><use href="#i-play"/></svg></span><span class="dur">6:01</span></span><span class="meta"><b>Bench 1 · Why</b></span></button>
+        <button class="film" type="button" data-film="bench2"><span class="poster"><img src="assets/video/bench2-thumb.jpg" alt="" loading="lazy"><span class="play"><svg class="i" aria-hidden="true"><use href="#i-play"/></svg></span><span class="dur">6:01</span></span><span class="meta"><b>Bench 2 · How</b></span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="docs" aria-labelledby="docs-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-book-open"/></svg>Docs</span><h2 id="docs-h" class="h-l">Go deeper.</h2></div>
+    <div class="grid g4">
+      <a class="card a-mama" href="https://github.com/neam-lang/sales-mama.ai/blob/main/GUIDE.md"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-book-open"/></svg></span><h3 style="margin:14px 0 6px">Guide</h3><p>The human entry point, in order.</p></a>
+      <a class="card a-researcher" href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-list-checks"/></svg></span><h3 style="margin:14px 0 6px">Setup</h3><p>Agent-executable setup, cheat sheets, troubleshooting.</p></a>
+      <a class="card a-writer" href="https://github.com/neam-lang/sales-mama.ai/blob/main/PLAN.md"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span><h3 style="margin:14px 0 6px">Plan</h3><p>Architecture, scoring, VAMs, allocation, compliance.</p></a>
+      <a class="card a-allocator" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/UI.md"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-monitor-smartphone"/></svg></span><h3 style="margin:14px 0 6px">Console and UI</h3><p>Cards, A2UI reports, the visual language.</p></a>
+    </div>
+    <p class="label" style="margin:28px 0 12px">Decisions</p>
+    <div class="row"><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0001-drafts-only.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0001 · Drafts only</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0002-git-as-database.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0002 · Git as the database</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0003-deterministic-math.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0003 · Deterministic maths</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0004-vendor-hosted-connectors.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0004 · Vendor-hosted connectors</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0005-data-residency.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0005 · Data residency</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0006-console-renders-only.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0006 · The console renders only</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0007-approve-then-send.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0007 · Approve, then send</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0008-local-registry-index.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0008 · Local registry index</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0009-generative-ui-a2ui.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0009 · Generative UI (A2UI)</a><a class="chip chip-line" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0010-appointments.md"><svg class="i i-sm" aria-hidden="true"><use href="#i-file-text"/></svg>ADR-0010 · Appointments</a></div>
+  </div>
+</section>
+<div class="wrap blk-tight"><nav class="pager" aria-label="Next page"><a href="scenarios.html"><span><svg class="i i-sm flip" aria-hidden="true"><use href="#i-arrow-right"/></svg>Previous</span><b>Scenarios</b></a><a class="next" href="films.html"><span>Next <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span><b>Films</b></a></nav></div>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <a class="brand" href="index.html"><span class="logo">SM</span>Sales Mama</a>
+      <p>An open-source sales harness for Claude Code. Small B2B teams in Singapore, Malaysia and India. You approve every message.</p>
+    </div>
+    <div><h4>Site</h4><ul>
+      <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="scenarios.html">Scenarios</a></li>
+      <li><a href="end-to-end.html">End to end</a></li><li><a href="films.html">Films</a></li></ul></div>
+    <div><h4>Docs on GitHub</h4><ul>
+      <li><a href="https://github.com/neam-lang/sales-mama.ai#readme">README</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/GUIDE.md">Guide</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md">Setup</a></li>
+      <li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/AGENTS.md">Agent rules</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/SECURITY.md">Security</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/adr">Decisions (ADRs)</a></li></ul></div>
+    <div><h4>Watch and compare</h4><ul>
+      <li><a href="https://youtu.be/tv8dHNzE3ks">YouTube: Sales Mama</a></li><li><a href="films.html">All eleven films</a></li>
+      <li><a href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard">Sales Harness Leaderboard</a></li>
+      <li><a href="https://huggingface.co/datasets/praveengovi/sales-harness-bench">Sales Harness Bench</a></li></ul></div>
+  </div>
+  <div class="foot-base">
+    <span>Apache 2.0</span><span>Built with <a href="https://claude.com/claude-code">Claude Code</a></span>
+    <span>Screens and films use fictional demo data (Mei, Grace, Arun, Harbourlight Foods…), except public ACRA registry figures.</span>
+  </div>
+</footer>
+
+<dialog class="player" id="player" aria-label="Film player">
+  <div class="player-in">
+    <video controls playsinline preload="none"></video>
+    <div class="pl-side">
+      <button class="x-btn" type="button" data-close aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <h3 data-pl-title>Film</h3>
+      <p class="sub" data-pl-sub></p>
+      <div data-pl-chl><p class="label">Chapters</p><ol class="chapters" data-pl-ch></ol></div>
+      <div class="pl-links">
+        <a data-pl-gh href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/assets/video"><svg class="i i-sm" aria-hidden="true"><use href="#i-github"/></svg>View this film on GitHub</a>
+        <a data-pl-dl href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/assets/video"><svg class="i i-sm" aria-hidden="true"><use href="#i-download"/></svg>Download the mp4</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="zoom" id="zoom" aria-label="Screenshot">
+  <div class="zoom-in">
+    <button class="x-btn" type="button" data-close aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <img alt="">
+    <div class="zoom-cap"><span data-zoom-cap></span><span class="row">
+      <button class="nav-btn" type="button" data-step="-1" aria-label="Previous"><svg class="i i-sm flip" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      <button class="nav-btn" type="button" data-step="1" aria-label="Next"><svg class="i i-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></button></span></div>
+  </div>
+</dialog>
+
+<dialog class="palette" id="palette" aria-label="Search or jump">
+  <div class="pal-in">
+    <label class="pal-q"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg><span class="sr">Search</span><input type="text" placeholder="Search pages, scenarios, commands, films…" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="pal-list"><kbd>esc</kbd></label>
+    <ul class="pal-list" id="pal-list" role="listbox"></ul>
+    <div class="pal-foot"><span><kbd>↑</kbd> <kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>/</kbd> or <kbd>⌘K</kbd> anywhere</span></div>
+  </div>
+</dialog>
+
+<script src="site/site.js" defer></script>
+</body>
+</html>

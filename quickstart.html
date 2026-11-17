@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quickstart · Sales Mama</title>
+<meta name="description" content="Install Sales Mama in five steps: clone, self-test, set up with Claude Code, open the console, connect Gmail and WhatsApp.">
+<meta name="theme-color" content="#16131F">
+<link rel="canonical" href="https://neam-lang.github.io/sales-mama.github.io/quickstart.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quickstart · Sales Mama">
+<meta property="og:description" content="Install Sales Mama in five steps: clone, self-test, set up with Claude Code, open the console, connect Gmail and WhatsApp.">
+<meta property="og:url" content="https://neam-lang.github.io/sales-mama.github.io/quickstart.html">
+<meta property="og:image" content="https://neam-lang.github.io/sales-mama.github.io/assets/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site/site.css">
+<script>try{var t=localStorage.getItem('sm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<script src="site/icons.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Sales Mama home"><span class="logo">SM</span>Sales Mama</a>
+  <div class="mk-pills" aria-label="Live send windows"><span class="mk-pill" data-market="SG"><span class="mk SG">SG</span><b data-now>--:--</b><span class="st" data-st>send window</span></span><span class="mk-pill" data-market="MY"><span class="mk MY">MY</span><b data-now>--:--</b><span class="st" data-st>send window</span></span><span class="mk-pill" data-market="IN"><span class="mk IN">IN</span><b data-now>--:--</b><span class="st" data-st>send window</span></span></div>
+  <button class="jump" type="button" data-jump aria-label="Search or jump (Command K)"><svg class="i i-sm" aria-hidden="true"><use href="#i-search"/></svg><span>Search or jump…</span><kbd>⌘K</kbd></button>
+  <div class="top-actions">
+    <button class="icon-btn jump-icon" type="button" data-jump aria-label="Search or jump"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></button>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch light or dark"><svg class="i" aria-hidden="true"><use href="#i-contrast"/></svg></button>
+    <a class="gh-btn" href="https://github.com/neam-lang/sales-mama.ai"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span></a>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Site">
+    <a href="index.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span>Overview</a>
+    <a href="quickstart.html" aria-current="page"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span>Quickstart</a>
+    <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span>Scenarios</a>
+    <a href="end-to-end.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span>End to end</a>
+    <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span>Films</a>
+    <span class="grow"></span>
+    <a class="rail-extra" href="https://github.com/neam-lang/sales-mama.ai"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></span>Repo</a>
+</nav>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Overview</a><svg class="i i-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg><span>Quickstart</span></nav>
+    <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-rocket"/></svg>Quickstart · about ten minutes</span>
+    <h1 class="h-xl">From clone to your<br>own Today page.</h1>
+    <p class="lede">Five steps, recorded on a real laptop. Claude Code does most of the work; you answer a few questions. Each step links to its moment in the install film.</p>
+    <div class="row">
+      <button class="btn btn-ink" type="button" data-film="install"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>Watch the install · 4:33</button>
+      <a class="btn btn-line" href="#roles"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg>Manager, runner or Codex?</a>
+    </div>
+  </div>
+</section>
+
+<section class="blk-tight" id="steps" aria-label="Install in five steps">
+  <div class="wrap">
+    <ol class="qs-steps">
+      <li class="qs-step rv"><span class="qs-n">1</span><div class="qs-body">
+        <div class="row"><h3>Check what you need</h3><button class="t-btn" type="button" data-film="install" data-t="43"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>0:43 · watch</button></div>
+        <p>Most laptops already have the first three. Node is only for the optional console.</p>
+        <div class="grid g4">
+          <div class="card req a-mama"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-git-branch"/></svg></span><div><b>Git</b><p>any recent version</p></div></div>
+          <div class="card req a-researcher"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-terminal"/></svg></span><div><b>Python 3.10+</b><p>plus PyYAML, the only dependency</p></div></div>
+          <div class="card req a-writer"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-bot"/></svg></span><div><b>Claude Code</b><p>signed in (or Codex)</p></div></div>
+          <div class="card req a-scout"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-monitor-smartphone"/></svg></span><div><b>Node 20+</b><p>optional, for the console</p></div></div>
+        </div>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>check your tools</div><pre><code>git --version
+python3 --version   <span class="cm"># 3.10 or newer</span>
+claude --version
+node --version      <span class="cm"># 20+, only for the console</span></code></pre></div>
+      </div></li>
+
+      <li class="qs-step rv"><span class="qs-n">2</span><div class="qs-body">
+        <div class="row"><h3>Get Sales Mama</h3><button class="t-btn" type="button" data-film="install" data-t="57"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>0:57 · watch</button></div>
+        <p>The whole system is a folder: your team's knowledge, accounts and tools, kept in git.</p>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>clone</div><pre><code>git clone https://github.com/neam-lang/sales-mama.ai.git
+cd sales-mama.ai
+python3 -c "import yaml" 2>/dev/null || python3 -m pip install --user pyyaml</code></pre></div>
+        <div class="note a-amber"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Homebrew Python (PEP 668)? Add <code>--break-system-packages</code> to the pip line.</span></div>
+      </div></li>
+
+      <li class="qs-step rv"><span class="qs-n">3</span><div class="qs-body">
+        <div class="row"><h3>Check it works</h3><button class="t-btn" type="button" data-film="install" data-t="73"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>1:13 · watch</button></div>
+        <p>The self-test runs every rule and tool on a copy of the demo data: sending, privacy, scoring, calendar, everything.</p>
+        <div class="code" data-copy="python3 scripts/selftest.py"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>self-test</div><pre><code>python3 scripts/selftest.py
+<span class="ok">213/213 passed</span></code></pre></div>
+      </div></li>
+
+      <li class="qs-step rv"><span class="qs-n">4</span><div class="qs-body">
+        <div class="row"><h3>Set yourself up with Claude Code</h3><button class="t-btn" type="button" data-film="install" data-t="101"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>1:41 · watch</button></div>
+        <p>Start Claude Code in the folder and ask in plain English. It checks your tools, then asks who you are, one question at a time.</p>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>start Claude Code</div><pre><code>claude</code></pre></div>
+        <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Set me up for Sales Mama</span></div>
+        <p class="label" style="margin-top:4px">It asks for</p>
+        <div class="asks">
+          <span class="chip a-mama"><svg class="i i-sm" aria-hidden="true"><use href="#i-user"/></svg>Name and work email</span><span class="chip a-scout"><svg class="i i-sm" aria-hidden="true"><use href="#i-globe"/></svg>Markets: SG · MY · IN</span>
+          <span class="chip a-researcher"><svg class="i i-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Territory and industries</span><span class="chip a-allocator"><svg class="i i-sm" aria-hidden="true"><use href="#i-target"/></svg>Quota and targets</span>
+          <span class="chip a-writer"><svg class="i i-sm" aria-hidden="true"><use href="#i-pen-line"/></svg>Tone and signature</span>
+        </div>
+        <div class="result"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>Your profile is written to <code class="c">reps/&lt;you&gt;.md</code>: readable, versioned, and only yours to change.</span></div>
+        <div class="result"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>A safety check confirms nothing can send without you.</span></div>
+        <div class="note"><svg class="i" aria-hidden="true"><use href="#i-key-round"/></svg><span>Your work email (<code>git config user.email</code>) is your identity: your accounts, your drafts, your calendar.</span></div>
+      </div></li>
+
+      <li class="qs-step rv"><span class="qs-n">5</span><div class="qs-body">
+        <div class="row"><h3>Open the console <span class="muted" style="font-weight:600;font-size:.7em">optional</span></h3><button class="t-btn" type="button" data-film="install" data-t="184"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>3:04 · watch</button></div>
+        <p>The first run installs the console. Then open it in your browser: your own Today page, chat, calendar and book. It only renders; every change still goes through a skill.</p>
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>console</div><pre><code>npm run console     <span class="cm"># then open http://localhost:4173</span></code></pre></div>
+        <div class="note a-allocator"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>Done. Your manager allocates accounts next. Each session starts with your queue: due follow-ups, hot accounts and quota left today.</span></div>
+      </div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="blk" id="connect" aria-labelledby="connect-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-plug"/></svg>Connect channels</span>
+      <h2 id="connect-h" class="h-l">Gmail and WhatsApp, one command each.</h2>
+      <p class="lede">Tokens stay in <code class="c">~/.config/sales-mama/</code>, never in the repo. Run the WhatsApp one with <code class="c">!</code> inside Claude Code so you type the token yourself.</p>
+    </div>
+    <div class="grid g2" style="align-items:start">
+      <div class="code" data-copy="python3 scripts/connect.py gmail --client-file <oauth-client.json>&#10;python3 scripts/connect.py status"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>channels</div><pre><code>python3 scripts/connect.py gmail --client-file &lt;oauth-client.json&gt;  <span class="cm"># browser opens, click Allow</span>
+! python3 scripts/connect.py whatsapp                                <span class="cm"># you type the token</span>
+python3 scripts/connect.py status
+<span class="ok">Sending: off · Gmail ok · WhatsApp ok</span></code></pre></div>
+      <div class="grid" style="gap:12px">
+        <div class="note a-mama"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><span><b>Gmail</b> uses one Google OAuth client from your IT team (Workspace, <i>Internal</i>, scopes <code>gmail.compose</code> and <code>gmail.readonly</code>).</span></div>
+        <div class="note a-researcher"><svg class="i" aria-hidden="true"><use href="#i-message-circle"/></svg><span><b>WhatsApp</b> goes only through the WhatsApp Business Cloud API, to contacts with a recorded opt-in, with an approved template for first contact.</span></div>
+        <div class="note a-writer"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg><span><b>Sending is off</b> until the manager sets <code>enabled: true</code> in <code>knowledge/sending.yaml</code>. Admin steps: <a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md#connect-channels-adr-0007">SETUP.md · Connect channels</a>.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="roles" aria-labelledby="roles-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-users"/></svg>By role</span>
+      <h2 id="roles-h" class="h-l">What else, depending on who you are.</h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Roles">
+      <button class="tab" role="tab" id="t-rep" aria-controls="p-rep" aria-selected="true"><svg class="i i-sm" aria-hidden="true"><use href="#i-user"/></svg>Rep</button>
+      <button class="tab" role="tab" id="t-man" aria-controls="p-man" aria-selected="false" tabindex="-1"><svg class="i i-sm" aria-hidden="true"><use href="#i-users"/></svg>Manager</button>
+      <button class="tab" role="tab" id="t-run" aria-controls="p-run" aria-selected="false" tabindex="-1"><svg class="i i-sm" aria-hidden="true"><use href="#i-moon-star"/></svg>Nightly runner</button>
+      <button class="tab" role="tab" id="t-cdx" aria-controls="p-cdx" aria-selected="false" tabindex="-1"><svg class="i i-sm" aria-hidden="true"><use href="#i-terminal"/></svg>Codex</button>
+    </div>
+    <div role="tabpanel" id="p-rep" aria-labelledby="t-rep"><div class="grid g2" style="align-items:start">
+      <div class="card"><h3>Joining a team that already runs Sales Mama</h3><p style="margin:10px 0 14px">Get repo access from your manager, open Claude Code in an empty folder, and type one sentence. It clones the repo, installs what's missing, asks your details, connects Gmail and shows a dry run.</p>
+        <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Set me up for Sales Mama from https://github.com/neam-lang/sales-mama.ai</span></div></div>
+      <div class="card"><h3>Every day after that</h3><p style="margin:10px 0 14px">Start with one sentence. Sales Mama checks replies, refreshes your accounts and drafts what's due. You review and approve inside your market's send window.</p>
+        <div class="row"><div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Run my day</span></div><div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Send my drafts</span></div></div></div>
+    </div></div>
+    <div role="tabpanel" id="p-man" aria-labelledby="t-man" hidden><div class="grid g2" style="align-items:start">
+      <div class="card"><h3>First hour</h3>
+        <ol style="margin:12px 0 0;padding-left:20px;color:var(--muted);display:flex;flex-direction:column;gap:8px">
+          <li>Create a <b>private</b> repo from the kit and invite your reps with write access. Set your handle in <code class="c">.github/CODEOWNERS</code>.</li>
+          <li>Open it in Claude Code and paste the prompt on the right. <code class="c">mama-setup</code> writes <code class="c">reps/&lt;you&gt;.md</code> with <code class="c">role: manager</code>.</li>
+          <li>Decide data residency with your DPO (<a href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/adr/0005-data-residency.md">ADR-0005</a>) before real customer data goes in.</li>
+          <li>Describe your business in <code class="c">knowledge/</code> (company, ICP, markets, products, proof) and import your CRM with <code class="c">/mama-ingest</code>.</li>
+          <li>After DPO sign-off, turn sending on in <code class="c">knowledge/sending.yaml</code>.</li>
+        </ol></div>
+      <div class="grid" style="gap:14px">
+        <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>paste into Claude Code</div><pre><code>Read GUIDE.md. Run python3 scripts/selftest.py, python3 scripts/lint.py, python3 scripts/session_start.py and python3 scripts/sync_skills.py --check, show me the results, then run the mama-setup skill for me as the manager.</code></pre></div>
+        <div class="note a-allocator"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><span><b>Add a rep:</b> give them repo access. They type “Set me up for Sales Mama from https://github.com/neam-lang/sales-mama.ai”.</span></div>
+      </div>
+    </div></div>
+    <div role="tabpanel" id="p-run" aria-labelledby="t-run" hidden><div class="grid g2" style="align-items:start">
+      <div class="card"><h3>One always-on machine</h3><p style="margin:10px 0 14px">Your own laptop is fine. It runs under the manager's identity at 02:00: scan, score, VAMs, allocation proposal, manager brief, lint and sync. It never sends.</p>
+        <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Set up the Sales Mama nightly runner on this machine.</span></div></div>
+      <div class="card"><h3>Run it now, or rehearse</h3><p style="margin:10px 0 14px">Run tonight's job by hand, or a dry run that scans and scores without writing account pages. Logs land in <code class="c">runner/logs/</code>.</p>
+        <div class="row"><div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Run tonight's job now</span></div><div class="you cmdy"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>/mama-nightly dry-run</span></div></div></div>
+    </div></div>
+    <div role="tabpanel" id="p-cdx" aria-labelledby="t-cdx" hidden><div class="grid g2" style="align-items:start">
+      <div class="card"><h3>Codex reads the same rules</h3><p style="margin:10px 0 0">Codex reads <code class="c">AGENTS.md</code> and <code class="c">.agents/skills/</code>; call skills as <code class="c">$mama-day</code> or in plain English. It has no hooks or ask rules, so it runs the session scripts itself, and <code class="c">/mama-send</code> stops at the preview for you to send.</p></div>
+      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>Codex sessions</div><pre><code>python3 scripts/session_start.py   <span class="cm"># at the start</span>
+python3 scripts/sync.py            <span class="cm"># at the end</span></code></pre></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="blk" id="first" aria-labelledby="first-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg>Your first five prompts</span>
+      <h2 id="first-h" class="h-l">Then just ask.</h2>
+      <p class="lede">Plain English works everywhere. Skill names are shortcuts. In the console, <code class="c">/</code> lists skills and <code class="c">@</code> finds accounts.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card a-mama rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-sun"/></svg></span><h3 style="margin:14px 0 8px">Plan the morning</h3><div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Run my day</span></div><p style="margin-top:10px">Replies, research and drafts, at once.</p></div>
+      <div class="card a-researcher rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-layout-grid"/></svg></span><h3 style="margin:14px 0 8px">See your book</h3><div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Show my book</span></div><p style="margin-top:10px">Due actions, hot and at-risk accounts, tiers.</p></div>
+      <div class="card a-scout rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-notebook-pen"/></svg></span><h3 style="margin:14px 0 8px">Walk in prepared</h3><div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Brief me on Harbourlight Foods</span></div><p style="margin-top:10px">A one-page brief before the call.</p></div>
+      <div class="card a-allocator rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-badge-check"/></svg></span><h3 style="margin:14px 0 8px">Check a company</h3><div class="you cmdy"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>/company-check 197200078R</span></div><p style="margin-top:10px">Registry rules plus three web verifiers.</p></div>
+      <div class="card a-writer rv"><span class="sq"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg></span><h3 style="margin:14px 0 8px">Send what's ready</h3><div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Send my drafts</span></div><p style="margin-top:10px">Preview, pick, approve.</p></div>
+      <a class="card card-ink rv" href="scenarios.html"><span class="sq" style="background:var(--lime);color:#16131F"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span><h3 style="margin:14px 0 8px;color:#fff">See all ten scenarios</h3><p>Every step, with the film moment. <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></p></a>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="health" aria-labelledby="health-h">
+  <div class="wrap">
+    <div class="grid g2" style="align-items:center;gap:40px">
+      <div class="sec-head" style="margin:0">
+        <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-gauge"/></svg>Health checks</span>
+        <h2 id="health-h" class="h-l">Know it's working.</h2>
+        <p class="lede">Run these any time. Every pilot mistake becomes a failing eval case before it is fixed.</p>
+      </div>
+      <div class="code"><div class="code-head"><span class="dots"><i></i><i></i><i></i></span>checks</div><pre><code>python3 scripts/selftest.py        <span class="cm"># <span class="ok">213/213</span></span>
+python3 scripts/eval.py            <span class="cm"># 15 pass · 0 fail · 8 pending</span>
+python3 scripts/lint.py            <span class="cm"># 0 errors</span>
+python3 scripts/connect.py status  <span class="cm"># channels and sending</span></code></pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="trouble" aria-labelledby="trouble-h">
+  <div class="wrap" style="max-width:900px">
+    <div class="sec-head">
+      <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-info"/></svg>Troubleshooting</span>
+      <h2 id="trouble-h" class="h-l">If something stops you.</h2>
+      <p class="lede">Ask Claude Code first: it tries the fix and explains it in one line. The full table is in <a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md">SETUP.md, Part E</a>.</p>
+    </div>
+<details class="faq"><summary><code class="c">pip install</code> says “externally managed environment”<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Homebrew Python follows PEP 668. Run <code class="c">python3 -m pip install --user --break-system-packages pyyaml</code>. PyYAML is the only dependency.</div></details>
+<details class="faq"><summary>Session start says it doesn't know who I am<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Your identity is <code class="c">git config user.email</code>, matched to <code class="c">reps/*.md</code>. Ask Claude Code: “Set me up for Sales Mama”.</div></details>
+<details class="faq"><summary><code class="c">connect.py status</code>: Gmail not connected<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Run <code class="c">python3 scripts/connect.py gmail</code>. The first time, add <code class="c">--client-file &lt;path&gt;</code> with the OAuth client your manager gives you.</div></details>
+<details class="faq"><summary><code class="c">send.py</code>: “sending is switched off”<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Expected until the manager sets <code class="c">enabled: true</code> in <code class="c">knowledge/sending.yaml</code>, after DPO sign-off.</div></details>
+<details class="faq"><summary><code class="c">send.py</code> blocks for the send window<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Expected outside the market's window or on a holiday. Sales Mama tells you the next allowed window.</div></details>
+<details class="faq"><summary><code class="c">send.py</code>: “changed since the preview”<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">The draft was edited after the preview. Run <code class="c">/mama-send</code> again and re-approve.</div></details>
+<details class="faq"><summary>A skill isn't found<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Run <code class="c">python3 scripts/sync_skills.py</code>, then start a new session.</div></details>
+<details class="faq"><summary>Push rejected or a sync conflict<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">Run <code class="c">python3 scripts/sync.py</code>. Sales Mama never force-pushes; if it persists it shows <code class="c">git status</code> and stops.</div></details>
+<details class="faq"><summary>The console doesn't start<svg class="i" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><div class="a">It needs Node 20+ and a signed-in <code class="c">claude</code> CLI. The first run installs its dependencies; then open <code class="c">http://localhost:4173</code>.</div></details>
+  </div>
+</section>
+<div class="wrap blk-tight"><nav class="pager" aria-label="Next page"><a href="index.html"><span><svg class="i i-sm flip" aria-hidden="true"><use href="#i-arrow-right"/></svg>Previous</span><b>Overview</b></a><a class="next" href="scenarios.html"><span>Next <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span><b>Scenarios</b></a></nav></div>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <a class="brand" href="index.html"><span class="logo">SM</span>Sales Mama</a>
+      <p>An open-source sales harness for Claude Code. Small B2B teams in Singapore, Malaysia and India. You approve every message.</p>
+    </div>
+    <div><h4>Site</h4><ul>
+      <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="scenarios.html">Scenarios</a></li>
+      <li><a href="end-to-end.html">End to end</a></li><li><a href="films.html">Films</a></li></ul></div>
+    <div><h4>Docs on GitHub</h4><ul>
+      <li><a href="https://github.com/neam-lang/sales-mama.ai#readme">README</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/GUIDE.md">Guide</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md">Setup</a></li>
+      <li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/AGENTS.md">Agent rules</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/SECURITY.md">Security</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/adr">Decisions (ADRs)</a></li></ul></div>
+    <div><h4>Watch and compare</h4><ul>
+      <li><a href="https://youtu.be/tv8dHNzE3ks">YouTube: Sales Mama</a></li><li><a href="films.html">All eleven films</a></li>
+      <li><a href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard">Sales Harness Leaderboard</a></li>
+      <li><a href="https://huggingface.co/datasets/praveengovi/sales-harness-bench">Sales Harness Bench</a></li></ul></div>
+  </div>
+  <div class="foot-base">
+    <span>Apache 2.0</span><span>Built with <a href="https://claude.com/claude-code">Claude Code</a></span>
+    <span>Screens and films use fictional demo data (Mei, Grace, Arun, Harbourlight Foods…), except public ACRA registry figures.</span>
+  </div>
+</footer>
+
+<dialog class="player" id="player" aria-label="Film player">
+  <div class="player-in">
+    <video controls playsinline preload="none"></video>
+    <div class="pl-side">
+      <button class="x-btn" type="button" data-close aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <h3 data-pl-title>Film</h3>
+      <p class="sub" data-pl-sub></p>
+      <div data-pl-chl><p class="label">Chapters</p><ol class="chapters" data-pl-ch></ol></div>
+      <div class="pl-links">
+        <a data-pl-gh href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/assets/video"><svg class="i i-sm" aria-hidden="true"><use href="#i-github"/></svg>View this film on GitHub</a>
+        <a data-pl-dl href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/assets/video"><svg class="i i-sm" aria-hidden="true"><use href="#i-download"/></svg>Download the mp4</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="zoom" id="zoom" aria-label="Screenshot">
+  <div class="zoom-in">
+    <button class="x-btn" type="button" data-close aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <img alt="">
+    <div class="zoom-cap"><span data-zoom-cap></span><span class="row">
+      <button class="nav-btn" type="button" data-step="-1" aria-label="Previous"><svg class="i i-sm flip" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      <button class="nav-btn" type="button" data-step="1" aria-label="Next"><svg class="i i-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></button></span></div>
+  </div>
+</dialog>
+
+<dialog class="palette" id="palette" aria-label="Search or jump">
+  <div class="pal-in">
+    <label class="pal-q"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg><span class="sr">Search</span><input type="text" placeholder="Search pages, scenarios, commands, films…" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="pal-list"><kbd>esc</kbd></label>
+    <ul class="pal-list" id="pal-list" role="listbox"></ul>
+    <div class="pal-foot"><span><kbd>↑</kbd> <kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>/</kbd> or <kbd>⌘K</kbd> anywhere</span></div>
+  </div>
+</dialog>
+
+<script src="site/site.js" defer></script>
+</body>
+</html>
