@@ -211,6 +211,7 @@
     ['Quickstart', 'quickstart.html', 'rocket', 'Install, set up, connect Gmail and WhatsApp'],
     ['Scenarios', 'scenarios.html', 'clapperboard', 'Ten real scenarios, step by step'],
     ['End to end', 'end-to-end.html', 'workflow', 'From a signal at 2 am to a reply at 10'],
+    ['Bench', 'bench.html', 'trophy', 'The Sales Mama score on the Sales Harness Bench'],
     ['Films', 'films.html', 'film', 'Eleven films: pitch, tour, install, five episodes, benchmark']
   ];
   var IDX = PAGES.map(function (p) { return { t: p[0], s: p[3], u: p[1], i: p[2], k: 'Page' }; }).concat([
@@ -226,7 +227,9 @@
     ['Approve, then send (mama-send)', 'scenarios.html#send', 'send'], ['While you sleep: the nightly run', 'scenarios.html#overnight', 'moon-star'],
     ['The loop, stage by stage', 'end-to-end.html#loop', 'route'], ['Who does what', 'end-to-end.html#roles', 'users'], ['The repo is the system', 'end-to-end.html#repo', 'folder-git-2'],
     ['Markets: SG · MY · IN', 'end-to-end.html#markets', 'globe'], ['Guardrails', 'end-to-end.html#guardrails', 'shield'], ['All commands', 'end-to-end.html#commands', 'command'],
-    ['Quality and the Sales Harness Bench', 'end-to-end.html#quality', 'trophy'], ['Docs and ADRs', 'end-to-end.html#docs', 'book-open']
+    ['Quality and the Sales Harness Bench', 'end-to-end.html#quality', 'trophy'], ['The Sales Mama score: 92.1', 'index.html#score', 'trophy'],
+    ['Leaderboard today', 'bench.html#board', 'chart-column'], ['How the score works', 'bench.html#scoring', 'gauge'], ['The ten tracks', 'bench.html#tracks', 'route'],
+    ['Nine rule breaks that zero a task', 'bench.html#violations', 'ban'], ['Benchmark your own harness', 'bench.html#run', 'square-terminal'], ['Docs and ADRs', 'end-to-end.html#docs', 'book-open']
   ].map(function (x) { return { t: x[0], u: x[1], i: x[2], k: 'Section' }; })).concat([
     ['/mama-day', 'Run my whole morning'], ['/mama-book', 'Show my book'], ['/mama-target', 'My allocated queue, claim tier C'], ['/mama-research', 'Cited research on one account'],
     ['/mama-recommend', 'What to pitch, with the chain'], ['/mama-draft', 'Email or WhatsApp draft'], ['/mama-send', 'Review and send what I approve'], ['/mama-replies', 'Handle replies'],
@@ -237,7 +240,8 @@
     Object.keys(FILMS).map(function (id) { return { t: FILMS[id].t, s: 'Film · ' + FILMS[id].d, film: id, i: 'circle-play', k: 'Film' }; })
   ).concat([{ t: 'Watch on YouTube: I turned Claude Code into an AI sales team', u: 'https://youtu.be/tv8dHNzE3ks', i: 'youtube', k: 'Video' },
     { t: 'GitHub repository', s: 'neam-lang/sales-mama.ai', u: REPO, i: 'github', k: 'Link' },
-    { t: 'Sales Harness Leaderboard', s: 'Hugging Face Space', u: 'https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard', i: 'trophy', k: 'Link' }]);
+    { t: '🤗 Sales Harness Leaderboard', s: 'Hugging Face Space', u: 'https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard', i: 'trophy', k: 'Link' },
+    { t: '🤗 Sales Harness Bench dataset', s: 'Hugging Face Dataset', u: 'https://huggingface.co/datasets/praveengovi/sales-harness-bench', i: 'database', k: 'Link' }]);
 
   var pal = $('#palette'), sel = 0, shown = [];
   function renderPal(q) {
@@ -283,7 +287,15 @@
   /* ── Reveal on scroll ── */
   var rv = $$('.rv');
   if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
+    var countUp = function (el) {
+      $$('[data-count]', el).forEach(function (n) {
+        var to = parseFloat(n.getAttribute('data-count')), dec = (n.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var tick = function (ts) { t0 = t0 || ts; var k = Math.min(1, (ts - t0) / 1600), e = 1 - Math.pow(1 - k, 3); n.textContent = (to * e).toFixed(dec); if (k < 1) requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+      });
+    };
+    var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); countUp(en.target); io.unobserve(en.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
     rv.forEach(function (el) { io.observe(el); });
   } else rv.forEach(function (el) { el.classList.add('in'); });
 

@@ -6,12 +6,12 @@
 <title>Sales Mama · the sales harness for Claude Code</title>
 <meta name="description" content="Signal to send, you approve each one. An open-source AI sales harness for small B2B teams in Singapore, Malaysia and India.">
 <meta name="theme-color" content="#16131F">
-<link rel="canonical" href="https://sales-mama.github.io/">
+<link rel="canonical" href="https://neam-lang.github.io/sales-mama.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sales Mama · the sales harness for Claude Code">
 <meta property="og:description" content="Signal to send, you approve each one. An open-source AI sales harness for small B2B teams in Singapore, Malaysia and India.">
-<meta property="og:url" content="https://sales-mama.github.io/">
-<meta property="og:image" content="https://sales-mama.github.io/assets/social-preview.png">
+<meta property="og:url" content="https://neam-lang.github.io/sales-mama.github.io/">
+<meta property="og:image" content="https://neam-lang.github.io/sales-mama.github.io/assets/social-preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +40,7 @@
     <a href="quickstart.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span>Quickstart</a>
     <a href="scenarios.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-clapperboard"/></svg></span>Scenarios</a>
     <a href="end-to-end.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-workflow"/></svg></span>End to end</a>
+    <a href="bench.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span>Bench</a>
     <a href="films.html"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-film"/></svg></span>Films</a>
     <span class="grow"></span>
     <a class="rail-extra" href="https://github.com/neam-lang/sales-mama.ai"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></span>Repo</a>
@@ -90,6 +91,58 @@
       <div class="stat tint a-allocator rv"><b>213<small>/213</small></b><span>self-test checks passing</span></div>
       <div class="stat rv"><b>3</b><span>markets: SG · MY · IN, each with its own rules</span></div>
       <div class="stat dark rv"><b>0</b><span>messages sent without the rep's approval</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="score" aria-labelledby="score-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><svg class="i i-sm" aria-hidden="true"><use href="#i-trophy"/></svg>The Sales Mama score</span>
+      <h2 id="score-h" class="h-l">“Can I trust it with my pipeline?”<br><span class="muted">We didn't answer with a demo. We measured.</span></h2>
+    </div>
+    <div class="story">
+      <div class="score-card rv">
+        <div class="ring" data-ring="92.1" style="--p:92.1">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="52"/><circle class="val" cx="60" cy="60" r="52" pathLength="100"/></svg>
+          <div class="ring-n"><b data-count="92.1">92.1</b><span>Sales Harness Score</span></div>
+        </div>
+        <p class="sc-who">Claude Code + Sales Mama · Haiku 5.5</p>
+        <div class="sc-badges"><span><svg class="i i-sm" aria-hidden="true"><use href="#i-trophy"/></svg>Rank 1 (tied)</span><span><svg class="i i-sm" aria-hidden="true"><use href="#i-shield-check"/></svg>0 critical violations</span><span><svg class="i i-sm" aria-hidden="true"><use href="#i-ban"/></svg>0% injections obeyed</span></div>
+        <a class="btn btn-lime" href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard"><span class="hf-e" aria-hidden="true">🤗</span>Open the leaderboard</a>
+      </div>
+      <ol class="beats">
+        <li class="beat rv"><span class="beat-n">1</span><div><h3>The test</h3><p>143 tasks from a sandboxed sales world in Singapore, Malaysia and India, in six languages. Every task run three times: <b>429 runs</b>, graded on what actually changed, not on how good the answer sounded.</p></div></li>
+        <li class="beat rv"><span class="beat-n">2</span><div><h3>The rule</h3><p>One message sent without approval. One suppressed contact. One obeyed injection. <b>Every 1% of runs with a critical violation costs 10% of the score.</b> Ten percent of runs and the score is zero.</p></div></li>
+        <li class="beat rv"><span class="beat-n">3</span><div><h3>The result</h3><p>Same model, same Claude Code. Only the harness changed.</p>
+          <div class="bars" role="table" aria-label="Track scores: Sales Mama versus vanilla Claude Code">
+            <div class="bars-key"><span><i class="k-me"></i>With Sales Mama</span><span><i class="k-va"></i>Vanilla Claude Code</span></div>
+            <div class="bar-row" role="row"><span role="rowheader">Recommend</span><div class="bar2"><i class="me" style="--w:93.3%"></i><i class="va" style="--w:86.7%"></i></div><b>93.3 <small>86.7</small></b></div>
+            <div class="bar-row" role="row"><span role="rowheader">Respond</span><div class="bar2"><i class="me" style="--w:100%"></i><i class="va" style="--w:98.8%"></i></div><b>100 <small>98.8</small></b></div>
+            <div class="bar-row" role="row"><span role="rowheader">Prospect</span><div class="bar2"><i class="me" style="--w:86.9%"></i><i class="va" style="--w:87.1%"></i></div><b>86.9 <small>87.1</small></b></div>
+            <div class="bar-row" role="row"><span role="rowheader">Care-QA</span><div class="bar2"><i class="me" style="--w:84.3%"></i><i class="va" style="--w:84.7%"></i></div><b>84.3 <small>84.7</small></b></div>
+            <div class="bar-row total" role="row"><span role="rowheader">Overall</span><div class="bar2"><i class="me" style="--w:92.1%"></i><i class="va" style="--w:90%"></i></div><b>92.1 <small>90.0</small></b></div>
+          </div>
+          <p style="margin-top:12px">The biggest gain is <b>Recommend, +6.6</b>: the kit only offers products from your own catalogue, with a chain from signal to pain to product.</p></div></li>
+        <li class="beat rv"><span class="beat-n">4</span><div><h3>The honest part</h3><p>The confidence intervals overlap (88.7–95.2 vs 83.9–94.8), so the two <b>share rank 1</b>. These are dev-split, self-reported runs, and the kit has seen the shape of the Prospect and Recommend items. That's why the benchmark is open: run it on your own harness and see.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="lb-mini rv">
+      <div class="lb-head"><span class="hf-emoji sm" aria-hidden="true">🤗</span><div><b>Sales Harness Leaderboard</b><span>SHB-SEA v0.1 · live on Hugging Face</span></div>
+        <a class="btn btn-line btn-sm" href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard">Full board <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a></div>
+      <div class="tbl-wrap"><table class="tbl lb">
+        <thead><tr><th>#</th><th>Harness</th><th>Score</th><th>Trust</th><th>pass^3</th><th>$ / task</th></tr></thead>
+        <tbody>
+          <tr class="me"><td><span class="rank">1</span></td><td><b>Claude Code + Sales Mama kit</b><span class="sub">Haiku 5.5 · open harness</span></td><td><span class="shs">92.1</span></td><td>100</td><td>81.5</td><td>0.0053</td></tr>
+          <tr><td><span class="rank">1</span></td><td><b>Claude Code (vanilla)</b><span class="sub">Haiku 5.5</span></td><td><span class="shs plain">90.0</span></td><td>100</td><td>80.0</td><td>0.0038</td></tr>
+          <tr class="ref"><td>—</td><td><b>Sales Mama deterministic tools</b><span class="sub">no LLM · reference, partial coverage</span></td><td>—</td><td>100</td><td>91.8</td><td>0.0000</td></tr>
+        </tbody></table></div>
+      <div class="row" style="margin-top:16px">
+        <a class="btn btn-ink btn-sm" href="bench.html"><svg class="i i-sm" aria-hidden="true"><use href="#i-trophy"/></svg>How the benchmark works</a>
+        <a class="btn btn-line btn-sm" href="https://huggingface.co/datasets/praveengovi/sales-harness-bench"><span class="hf-e" aria-hidden="true">🤗</span>Benchmark dataset</a>
+        <button class="btn btn-line btn-sm" type="button" data-film="bench2"><svg class="i i-sm" aria-hidden="true"><use href="#i-circle-play"/></svg>Watch: how it was built · 6:01</button>
+      </div>
     </div>
   </div>
 </section>
@@ -328,14 +381,14 @@ claude                                   <span class="cm"># then type: <span cla
     </div>
     <div><h4>Site</h4><ul>
       <li><a href="index.html">Overview</a></li><li><a href="quickstart.html">Quickstart</a></li><li><a href="scenarios.html">Scenarios</a></li>
-      <li><a href="end-to-end.html">End to end</a></li><li><a href="films.html">Films</a></li></ul></div>
+      <li><a href="end-to-end.html">End to end</a></li><li><a href="bench.html">Bench</a></li><li><a href="films.html">Films</a></li></ul></div>
     <div><h4>Docs on GitHub</h4><ul>
       <li><a href="https://github.com/neam-lang/sales-mama.ai#readme">README</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/GUIDE.md">Guide</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/SETUP.md">Setup</a></li>
       <li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/AGENTS.md">Agent rules</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/SECURITY.md">Security</a></li><li><a href="https://github.com/neam-lang/sales-mama.ai/tree/main/docs/adr">Decisions (ADRs)</a></li></ul></div>
     <div><h4>Watch and compare</h4><ul>
       <li><a href="https://youtu.be/tv8dHNzE3ks">YouTube: Sales Mama</a></li><li><a href="films.html">All eleven films</a></li>
-      <li><a href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard">Sales Harness Leaderboard</a></li>
-      <li><a href="https://huggingface.co/datasets/praveengovi/sales-harness-bench">Sales Harness Bench</a></li></ul></div>
+      <li><a href="https://huggingface.co/spaces/praveengovi/Sales-Harness-Leaderboard">🤗 Sales Harness Leaderboard</a></li>
+      <li><a href="https://huggingface.co/datasets/praveengovi/sales-harness-bench">🤗 Sales Harness Bench dataset</a></li></ul></div>
   </div>
   <div class="foot-base">
     <span>Apache 2.0</span><span>Built with <a href="https://claude.com/claude-code">Claude Code</a></span>
