@@ -216,7 +216,7 @@
   ];
   var IDX = PAGES.map(function (p) { return { t: p[0], s: p[3], u: p[1], i: p[2], k: 'Page' }; }).concat([
     ['Why Sales Mama', 'index.html#why', 'target'], ['How it works', 'index.html#how', 'layers'], ['Approve, then send', 'index.html#send', 'shield-check'],
-    ['The console', 'index.html#console', 'monitor-smartphone'], ['A day with Sales Mama', 'index.html#day', 'clock'],
+    ['The console', 'index.html#console', 'monitor-smartphone'], ['A day with Sales Mama', 'index.html#scenarios', 'clock'],
     ['Install in five steps', 'quickstart.html#steps', 'square-terminal'], ['Connect Gmail and WhatsApp', 'quickstart.html#connect', 'plug'],
     ['Set up as the manager', 'quickstart.html#roles', 'users'], ['Nightly runner', 'quickstart.html#roles', 'moon-star'], ['Using Codex', 'quickstart.html#roles', 'terminal'],
     ['Your first five prompts', 'quickstart.html#first', 'message-square'], ['Health checks', 'quickstart.html#health', 'gauge'], ['Troubleshooting', 'quickstart.html#trouble', 'info'],

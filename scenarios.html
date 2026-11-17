@@ -62,7 +62,7 @@
     <nav class="sidx" aria-label="Scenarios" data-spy>
       <p class="label">Scenarios</p>
       <a href="#day-one" class="a-mama"><span class="n">00</span><span class="dot"></span>Day one</a>
-      <a href="#overnight" class="a-vam"><span class="n">01</span><span class="dot"></span>While you sleep</a><a href="#leads" class="a-scout"><span class="n">02</span><span class="dot"></span>Find the right leads</a><a href="#company-check" class="a-scout"><span class="n">03</span><span class="dot"></span>Is this company real?</a><a href="#insights" class="a-researcher"><span class="n">04</span><span class="dot"></span>Size a market</a><a href="#morning" class="a-mama"><span class="n">05</span><span class="dot"></span>Plan the morning</a><a href="#outreach" class="a-writer"><span class="n">06</span><span class="dot"></span>Outreach that gets replies</a><a href="#send" class="a-writer"><span class="n">07</span><span class="dot"></span>Approve, then send</a><a href="#meetings" class="a-researcher"><span class="n">08</span><span class="dot"></span>Meetings that never slip</a><a href="#manager" class="a-allocator"><span class="n">09</span><span class="dot"></span>Lead the team</a>
+      <a href="#morning" class="a-mama"><span class="n">01</span><span class="dot"></span>Plan the morning</a><a href="#leads" class="a-scout"><span class="n">02</span><span class="dot"></span>Find the right leads</a><a href="#company-check" class="a-scout"><span class="n">03</span><span class="dot"></span>Is this company real?</a><a href="#insights" class="a-researcher"><span class="n">04</span><span class="dot"></span>Size a market</a><a href="#outreach" class="a-writer"><span class="n">05</span><span class="dot"></span>Outreach that gets replies</a><a href="#send" class="a-writer"><span class="n">06</span><span class="dot"></span>Approve, then send</a><a href="#meetings" class="a-researcher"><span class="n">07</span><span class="dot"></span>Meetings that never slip</a><a href="#manager" class="a-allocator"><span class="n">08</span><span class="dot"></span>Lead the team</a><a href="#overnight" class="a-vam"><span class="n">09</span><span class="dot"></span>While you sleep</a>
     </nav>
     <div>
   <section class="scn a-mama" id="day-one" aria-labelledby="day-one-h">
@@ -80,55 +80,57 @@
     </div>
   </section>
 
-  <section class="scn a-vam" id="overnight" aria-labelledby="overnight-h">
+  <section class="scn a-mama" id="morning" aria-labelledby="morning-h">
     <header class="scn-head">
       <span class="scn-num">01</span>
       <div>
-        <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Find</span><span class="role a-vam">Runner</span><span class="role a-allocator">Manager</span><span class="mk SG">SG</span><span class="mk MY">MY</span><span class="mk IN">IN</span><span class="who">One always-on machine · 02:00 SGT</span></div>
-        <h2 id="overnight-h">While you sleep</h2>
-        <p class="lede">The nightly runner does the legwork under the manager's identity, then writes the morning brief. It never sends.</p>
+        <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Plan</span><span class="role a-mama">Rep</span><span class="mk SG">SG</span><span class="who">Mei · account executive · 17 accounts</span></div>
+        <h2 id="morning-h">Plan the morning</h2>
+        <p class="lede">“Where do I start?” Monday, 8:40 am. 17 accounts, 2 follow-ups overdue and a meeting at 3 pm. Plan the morning in minutes.</p>
       </div>
-      <div class="acts"><button class="btn btn-ink btn-sm" type="button" data-film="ep2"><svg class="i i-sm" aria-hidden="true"><use href="#i-circle-play"/></svg>Watch it in Episode 2</button><a class="btn btn-line btn-sm" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/assets/video/ep2-chasing-the-wrong-leads-720p.mp4"><svg class="i i-sm" aria-hidden="true"><use href="#i-github"/></svg>Film on GitHub</a></div>
+      <div class="acts"><button class="btn btn-ink btn-sm" type="button" data-film="ep1"><svg class="i i-sm" aria-hidden="true"><use href="#i-circle-play"/></svg>Watch Episode 1 · 5:01</button><a class="btn btn-line btn-sm" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/assets/video/ep1-where-do-i-start-720p.mp4"><svg class="i i-sm" aria-hidden="true"><use href="#i-github"/></svg>Film on GitHub</a></div>
     </header>
     <div class="scn-body">
       <ol class="steps">
-          <li class="step" data-shot="cockpit" data-cap="<b>Morning cockpit.</b> What the night found, ready for the manager.">
-            <div class="step-top"><span class="k">STEP 1</span><button class="t-btn" type="button" data-film="ep2" data-t="43"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>0:43</button></div>
-            <h3>Scan</h3>
-            <p class="does">Scout subagents read the sources in <code class="c">knowledge/sources.yaml</code>: news, tenders, registries, events. Each finding is saved as a headline, link, date and a short summary in <code class="c">raw/signals/</code>.</p>
-            <img class="inline-shot" src="assets/screens/manager-cockpit.jpg" alt="Morning cockpit: last night's run, the funnel and a match to confirm" loading="lazy">
+          <li class="step" data-shot="today" data-cap="<b>Today.</b> Next up, the day's ribbon, the SG send window, what needs you.">
+            <div class="step-top"><span class="k">STEP 1</span><button class="t-btn" type="button" data-film="ep1" data-t="43"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>0:43</button></div>
+            <h3>See your day</h3>
+            <p class="does">Open <b>Today</b>: your next meeting with a countdown, the send window, and the accounts to act on today.</p><div class="result"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>Follow-ups due, an account at risk, a brief to read. Each with one button.</span></div>
+            <img class="inline-shot" src="assets/screens/today.jpg" alt="Today: next meeting, today's ribbon, send windows and what needs you" loading="lazy">
           </li>
-          <li class="step" data-shot="" data-cap="">
-            <div class="step-top"><span class="k">STEP 2</span></div>
-            <h3>Resolve</h3>
-            <p class="does"><code class="c">resolve.py</code> links each signal to an account by registry ID, domain or name. 0.90 or more links; 0.70–0.90 goes to the manager's review queue. Never by guesswork.</p>
-            
+          <li class="step" data-shot="agents" data-cap="<b>Agents in parallel.</b> Researcher and VAM lanes work at once.">
+            <div class="step-top"><span class="k">STEP 2</span><button class="t-btn" type="button" data-film="ep1" data-t="83"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>1:23</button></div>
+            <h3>Let Mama do the legwork</h3>
+            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Run my day</span></div><p class="does">One sentence. Sales Mama checks replies, refreshes every account and drafts what's due, with agents in parallel.</p><div class="mama-says"><span class="logo">SM</span><p>Start with the 3 pm meeting. Approve the Nimbus follow-up before the window opens.</p></div>
+            <img class="inline-shot" src="assets/screens/chat-agents.jpg" alt="Chat: researcher and VAM agents working in parallel lanes" loading="lazy">
           </li>
-          <li class="step" data-shot="" data-cap="">
-            <div class="step-top"><span class="k">STEP 3</span></div>
-            <h3>Score</h3>
-            <p class="does"><code class="c">score.py</code> rescores accounts with explainable parts and tiers A · B · C. Maths in scripts, not in the model.</p>
-            
+          <li class="step" data-shot="draft" data-cap="<b>Cited draft.</b> The follow-up opens with the signal, with its checks and sources.">
+            <div class="step-top"><span class="k">STEP 3</span><button class="t-btn" type="button" data-film="ep1" data-t="131"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>2:11</button></div>
+            <h3>Know who needs you</h3>
+            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Why is Nimbus at risk?</span></div><p class="does">Ask about any account in plain English.</p><div class="mama-says"><span class="logo">SM</span><p>Their IT contract ends on 31 December and there's no plan yet. Send follow-up 1 today and mention the December contract end.</p></div>
+            <img class="inline-shot" src="assets/screens/chat-draft.jpg" alt="A cited follow-up draft for Nimbus Clinics with its checks" loading="lazy">
           </li>
-          <li class="step" data-shot="" data-cap="">
-            <div class="step-top"><span class="k">STEP 4</span></div>
-            <h3>Watch every book</h3>
-            <p class="does">Virtual account managers set risk flags and the next best action, and pre-draft due follow-ups for the rep to approve. They never contact anyone or change owners.</p>
-            
+          <li class="step" data-shot="brief" data-cap="<b>Call brief.</b> One page, every fact with its source.">
+            <div class="step-top"><span class="k">STEP 4</span><button class="t-btn" type="button" data-film="ep1" data-t="173"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>2:53</button></div>
+            <h3>Walk in prepared</h3>
+            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Brief me on Harbourlight Foods</span></div><p class="does">A one-page brief before every meeting, built from the account page: the new contract, the second kitchen, the objection she raised.</p><div class="mama-says"><span class="logo">SM</span><p>She said they already have a provider. Ask what they'd change.</p></div>
+            <img class="inline-shot" src="assets/screens/brief.jpg" alt="Call brief for Harbourlight Foods" loading="lazy">
           </li>
-          <li class="step" data-shot="mtoday" data-cap="<b>Decisions waiting.</b> The manager approves before anyone is assigned.">
-            <div class="step-top"><span class="k">STEP 5</span></div>
-            <h3>Propose and brief</h3>
-            <p class="does">An allocation proposal for the pool, the manager's brief, lint and a git sync.</p><div class="mama-says"><span class="logo">SM</span><p>Allocation proposal ready: 12 leads across 3 reps. Approve in the morning cockpit.</p></div><div class="approve"><svg class="i" aria-hidden="true"><use href="#i-mouse-pointer-click"/></svg><p>The manager approves the allocation at 08:30.</p><span class="tag">You approve</span></div>
-            <img class="inline-shot" src="assets/screens/manager-today.jpg" alt="Manager's Today: team, pool, send windows and a match to confirm" loading="lazy">
+          <li class="step" data-shot="sendprev" data-cap="<b>Send review.</b> READY or held, with every check.">
+            <div class="step-top"><span class="k">STEP 5</span><button class="t-btn" type="button" data-film="ep1" data-t="214"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>3:34</button></div>
+            <h3>Send at the right time</h3>
+            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Send my drafts</span></div><p class="does">Every draft is checked before anything goes out: unsubscribes, sources and the send window. The draft without a contact is held.</p><div class="approve"><svg class="i" aria-hidden="true"><use href="#i-mouse-pointer-click"/></svg><p>Reply “send 1” and it goes at 9:05, inside the Singapore window.</p><span class="tag">You approve</span></div>
+            <img class="inline-shot" src="assets/screens/send-preview.jpg" alt="Send preview: drafts ready and held" loading="lazy">
           </li>
       </ol>
       <figure class="stage">
-        <button class="frame" type="button" data-zoom="overnight" aria-label="Enlarge screen"><img src="assets/screens/manager-cockpit.jpg" alt="Morning cockpit: last night's run, the funnel and a match to confirm" data-key="cockpit" class="on" loading="lazy"><img src="assets/screens/manager-today.jpg" alt="Manager's Today: team, pool, send windows and a match to confirm" data-key="mtoday" loading="lazy"></button>
-        <figcaption><b>Morning cockpit.</b> What the night found, ready for the manager.</figcaption>
+        <button class="frame" type="button" data-zoom="morning" aria-label="Enlarge screen"><img src="assets/screens/today.jpg" alt="Today: next meeting, today's ribbon, send windows and what needs you" data-key="today" class="on" loading="lazy"><img src="assets/screens/chat-agents.jpg" alt="Chat: researcher and VAM agents working in parallel lanes" data-key="agents" loading="lazy"><img src="assets/screens/chat-draft.jpg" alt="A cited follow-up draft for Nimbus Clinics with its checks" data-key="draft" loading="lazy"><img src="assets/screens/brief.jpg" alt="Call brief for Harbourlight Foods" data-key="brief" loading="lazy"><img src="assets/screens/send-preview.jpg" alt="Send preview: drafts ready and held" data-key="sendprev" loading="lazy"></button>
+        <figcaption><b>Today.</b> Next up, the day's ribbon, the SG send window, what needs you.</figcaption>
       </figure>
     </div>
-    
+    <div class="ba rv"><p class="ba-title">The difference by 9 am.</p>
+        <div class="before"><h4>Before</h4><ul><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>An hour sorting the inbox</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>Walking into 3 pm cold</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>A follow-up that slips a week</span></li></ul></div>
+        <div class="after"><h4>With Sales Mama</h4><ul><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>A plan before the send window opens</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>A brief ready for 3 pm</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>The follow-up approved and sent at 9</span></li></ul></div></div>
   </section>
   <section class="scn a-scout" id="leads" aria-labelledby="leads-h">
     <header class="scn-head">
@@ -282,61 +284,9 @@
     </div>
     
   </section>
-  <section class="scn a-mama" id="morning" aria-labelledby="morning-h">
-    <header class="scn-head">
-      <span class="scn-num">05</span>
-      <div>
-        <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Plan</span><span class="role a-mama">Rep</span><span class="mk SG">SG</span><span class="who">Mei · account executive · 17 accounts</span></div>
-        <h2 id="morning-h">Plan the morning</h2>
-        <p class="lede">“Where do I start?” Monday, 8:40 am. 17 accounts, 2 follow-ups overdue and a meeting at 3 pm. Plan the morning in minutes.</p>
-      </div>
-      <div class="acts"><button class="btn btn-ink btn-sm" type="button" data-film="ep1"><svg class="i i-sm" aria-hidden="true"><use href="#i-circle-play"/></svg>Watch Episode 1 · 5:01</button><a class="btn btn-line btn-sm" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/assets/video/ep1-where-do-i-start-720p.mp4"><svg class="i i-sm" aria-hidden="true"><use href="#i-github"/></svg>Film on GitHub</a></div>
-    </header>
-    <div class="scn-body">
-      <ol class="steps">
-          <li class="step" data-shot="today" data-cap="<b>Today.</b> Next up, the day's ribbon, the SG send window, what needs you.">
-            <div class="step-top"><span class="k">STEP 1</span><button class="t-btn" type="button" data-film="ep1" data-t="43"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>0:43</button></div>
-            <h3>See your day</h3>
-            <p class="does">Open <b>Today</b>: your next meeting with a countdown, the send window, and the accounts to act on today.</p><div class="result"><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>Follow-ups due, an account at risk, a brief to read. Each with one button.</span></div>
-            <img class="inline-shot" src="assets/screens/today.jpg" alt="Today: next meeting, today's ribbon, send windows and what needs you" loading="lazy">
-          </li>
-          <li class="step" data-shot="agents" data-cap="<b>Agents in parallel.</b> Researcher and VAM lanes work at once.">
-            <div class="step-top"><span class="k">STEP 2</span><button class="t-btn" type="button" data-film="ep1" data-t="83"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>1:23</button></div>
-            <h3>Let Mama do the legwork</h3>
-            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Run my day</span></div><p class="does">One sentence. Sales Mama checks replies, refreshes every account and drafts what's due, with agents in parallel.</p><div class="mama-says"><span class="logo">SM</span><p>Start with the 3 pm meeting. Approve the Nimbus follow-up before the window opens.</p></div>
-            <img class="inline-shot" src="assets/screens/chat-agents.jpg" alt="Chat: researcher and VAM agents working in parallel lanes" loading="lazy">
-          </li>
-          <li class="step" data-shot="draft" data-cap="<b>Cited draft.</b> The follow-up opens with the signal, with its checks and sources.">
-            <div class="step-top"><span class="k">STEP 3</span><button class="t-btn" type="button" data-film="ep1" data-t="131"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>2:11</button></div>
-            <h3>Know who needs you</h3>
-            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Why is Nimbus at risk?</span></div><p class="does">Ask about any account in plain English.</p><div class="mama-says"><span class="logo">SM</span><p>Their IT contract ends on 31 December and there's no plan yet. Send follow-up 1 today and mention the December contract end.</p></div>
-            <img class="inline-shot" src="assets/screens/chat-draft.jpg" alt="A cited follow-up draft for Nimbus Clinics with its checks" loading="lazy">
-          </li>
-          <li class="step" data-shot="brief" data-cap="<b>Call brief.</b> One page, every fact with its source.">
-            <div class="step-top"><span class="k">STEP 4</span><button class="t-btn" type="button" data-film="ep1" data-t="173"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>2:53</button></div>
-            <h3>Walk in prepared</h3>
-            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Brief me on Harbourlight Foods</span></div><p class="does">A one-page brief before every meeting, built from the account page: the new contract, the second kitchen, the objection she raised.</p><div class="mama-says"><span class="logo">SM</span><p>She said they already have a provider. Ask what they'd change.</p></div>
-            <img class="inline-shot" src="assets/screens/brief.jpg" alt="Call brief for Harbourlight Foods" loading="lazy">
-          </li>
-          <li class="step" data-shot="sendprev" data-cap="<b>Send review.</b> READY or held, with every check.">
-            <div class="step-top"><span class="k">STEP 5</span><button class="t-btn" type="button" data-film="ep1" data-t="214"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>3:34</button></div>
-            <h3>Send at the right time</h3>
-            <div class="you"><svg class="i i-sm" aria-hidden="true"><use href="#i-message-square"/></svg><span>Send my drafts</span></div><p class="does">Every draft is checked before anything goes out: unsubscribes, sources and the send window. The draft without a contact is held.</p><div class="approve"><svg class="i" aria-hidden="true"><use href="#i-mouse-pointer-click"/></svg><p>Reply “send 1” and it goes at 9:05, inside the Singapore window.</p><span class="tag">You approve</span></div>
-            <img class="inline-shot" src="assets/screens/send-preview.jpg" alt="Send preview: drafts ready and held" loading="lazy">
-          </li>
-      </ol>
-      <figure class="stage">
-        <button class="frame" type="button" data-zoom="morning" aria-label="Enlarge screen"><img src="assets/screens/today.jpg" alt="Today: next meeting, today's ribbon, send windows and what needs you" data-key="today" class="on" loading="lazy"><img src="assets/screens/chat-agents.jpg" alt="Chat: researcher and VAM agents working in parallel lanes" data-key="agents" loading="lazy"><img src="assets/screens/chat-draft.jpg" alt="A cited follow-up draft for Nimbus Clinics with its checks" data-key="draft" loading="lazy"><img src="assets/screens/brief.jpg" alt="Call brief for Harbourlight Foods" data-key="brief" loading="lazy"><img src="assets/screens/send-preview.jpg" alt="Send preview: drafts ready and held" data-key="sendprev" loading="lazy"></button>
-        <figcaption><b>Today.</b> Next up, the day's ribbon, the SG send window, what needs you.</figcaption>
-      </figure>
-    </div>
-    <div class="ba rv"><p class="ba-title">The difference by 9 am.</p>
-        <div class="before"><h4>Before</h4><ul><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>An hour sorting the inbox</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>Walking into 3 pm cold</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>A follow-up that slips a week</span></li></ul></div>
-        <div class="after"><h4>With Sales Mama</h4><ul><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>A plan before the send window opens</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>A brief ready for 3 pm</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>The follow-up approved and sent at 9</span></li></ul></div></div>
-  </section>
   <section class="scn a-writer" id="outreach" aria-labelledby="outreach-h">
     <header class="scn-head">
-      <span class="scn-num">06</span>
+      <span class="scn-num">05</span>
       <div>
         <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Engage</span><span class="role a-mama">Rep</span><span class="mk SG">SG</span><span class="mk MY">MY</span><span class="mk IN">IN</span><span class="who">Mei and Arun · Singapore, Malaysia and India</span></div>
         <h2 id="outreach-h">Outreach that gets replies</h2>
@@ -388,7 +338,7 @@
   </section>
   <section class="scn a-writer" id="send" aria-labelledby="send-h">
     <header class="scn-head">
-      <span class="scn-num">07</span>
+      <span class="scn-num">06</span>
       <div>
         <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Engage</span><span class="role a-mama">Rep</span><span class="mk SG">SG</span><span class="mk MY">MY</span><span class="who">Two drafts ready for the SG window, one WhatsApp held</span></div>
         <h2 id="send-h">Approve, then send</h2>
@@ -441,7 +391,7 @@
   </section>
   <section class="scn a-researcher" id="meetings" aria-labelledby="meetings-h">
     <header class="scn-head">
-      <span class="scn-num">08</span>
+      <span class="scn-num">07</span>
       <div>
         <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Convert</span><span class="role a-mama">Rep</span><span class="mk SG">SG</span><span class="who">Mei's week · 9 appointments · 6 renewal dates</span></div>
         <h2 id="meetings-h">Meetings that never slip</h2>
@@ -493,7 +443,7 @@
   </section>
   <section class="scn a-allocator" id="manager" aria-labelledby="manager-h">
     <header class="scn-head">
-      <span class="scn-num">09</span>
+      <span class="scn-num">08</span>
       <div>
         <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Lead</span><span class="role a-allocator">Manager</span><span class="mk SG">SG</span><span class="mk MY">MY</span><span class="mk IN">IN</span><span class="who">Grace · sales manager · 3 reps</span></div>
         <h2 id="manager-h">Lead the team</h2>
@@ -542,6 +492,56 @@
     <div class="ba rv"><p class="ba-title">A team you can see.</p>
         <div class="before"><h4>Before</h4><ul><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>Leads handed out by gut feel</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>Overloaded reps, idle leads</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-x"/></svg><span>Reports built by hand on Friday</span></li></ul></div>
         <div class="after"><h4>With Sales Mama</h4><ul><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>Every assignment explained and approved</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>Every rep's week at a glance</span></li><li><svg class="i" aria-hidden="true"><use href="#i-circle-check"/></svg><span>The weekly review, ready to share</span></li></ul></div></div>
+  </section>
+  <section class="scn a-vam" id="overnight" aria-labelledby="overnight-h">
+    <header class="scn-head">
+      <span class="scn-num">09</span>
+      <div>
+        <div class="meta"><span class="chip chip-line" style="padding:3px 10px;font-size:12px">Stage · Overnight</span><span class="role a-vam">Runner</span><span class="role a-allocator">Manager</span><span class="mk SG">SG</span><span class="mk MY">MY</span><span class="mk IN">IN</span><span class="who">One always-on machine · 02:00 SGT</span></div>
+        <h2 id="overnight-h">While you sleep</h2>
+        <p class="lede">The nightly runner does the legwork under the manager's identity, then writes the morning brief. It never sends.</p>
+      </div>
+      <div class="acts"><button class="btn btn-ink btn-sm" type="button" data-film="ep2"><svg class="i i-sm" aria-hidden="true"><use href="#i-circle-play"/></svg>Watch it in Episode 2</button><a class="btn btn-line btn-sm" href="https://github.com/neam-lang/sales-mama.ai/blob/main/docs/assets/video/ep2-chasing-the-wrong-leads-720p.mp4"><svg class="i i-sm" aria-hidden="true"><use href="#i-github"/></svg>Film on GitHub</a></div>
+    </header>
+    <div class="scn-body">
+      <ol class="steps">
+          <li class="step" data-shot="cockpit" data-cap="<b>Morning cockpit.</b> What the night found, ready for the manager.">
+            <div class="step-top"><span class="k">STEP 1</span><button class="t-btn" type="button" data-film="ep2" data-t="43"><svg class="i" aria-hidden="true"><use href="#i-circle-play"/></svg>0:43</button></div>
+            <h3>Scan</h3>
+            <p class="does">Scout subagents read the sources in <code class="c">knowledge/sources.yaml</code>: news, tenders, registries, events. Each finding is saved as a headline, link, date and a short summary in <code class="c">raw/signals/</code>.</p>
+            <img class="inline-shot" src="assets/screens/manager-cockpit.jpg" alt="Morning cockpit: last night's run, the funnel and a match to confirm" loading="lazy">
+          </li>
+          <li class="step" data-shot="" data-cap="">
+            <div class="step-top"><span class="k">STEP 2</span></div>
+            <h3>Resolve</h3>
+            <p class="does"><code class="c">resolve.py</code> links each signal to an account by registry ID, domain or name. 0.90 or more links; 0.70–0.90 goes to the manager's review queue. Never by guesswork.</p>
+            
+          </li>
+          <li class="step" data-shot="" data-cap="">
+            <div class="step-top"><span class="k">STEP 3</span></div>
+            <h3>Score</h3>
+            <p class="does"><code class="c">score.py</code> rescores accounts with explainable parts and tiers A · B · C. Maths in scripts, not in the model.</p>
+            
+          </li>
+          <li class="step" data-shot="" data-cap="">
+            <div class="step-top"><span class="k">STEP 4</span></div>
+            <h3>Watch every book</h3>
+            <p class="does">Virtual account managers set risk flags and the next best action, and pre-draft due follow-ups for the rep to approve. They never contact anyone or change owners.</p>
+            
+          </li>
+          <li class="step" data-shot="mtoday" data-cap="<b>Decisions waiting.</b> The manager approves before anyone is assigned.">
+            <div class="step-top"><span class="k">STEP 5</span></div>
+            <h3>Propose and brief</h3>
+            <p class="does">An allocation proposal for the pool, the manager's brief, lint and a git sync.</p><div class="mama-says"><span class="logo">SM</span><p>Allocation proposal ready: 12 leads across 3 reps. Approve in the morning cockpit.</p></div><div class="approve"><svg class="i" aria-hidden="true"><use href="#i-mouse-pointer-click"/></svg><p>The manager approves the allocation at 08:30.</p><span class="tag">You approve</span></div>
+            <img class="inline-shot" src="assets/screens/manager-today.jpg" alt="Manager's Today: team, pool, send windows and a match to confirm" loading="lazy">
+          </li>
+      </ol>
+      <figure class="stage">
+        <button class="frame" type="button" data-zoom="overnight" aria-label="Enlarge screen"><img src="assets/screens/manager-cockpit.jpg" alt="Morning cockpit: last night's run, the funnel and a match to confirm" data-key="cockpit" class="on" loading="lazy"><img src="assets/screens/manager-today.jpg" alt="Manager's Today: team, pool, send windows and a match to confirm" data-key="mtoday" loading="lazy"></button>
+        <figcaption><b>Morning cockpit.</b> What the night found, ready for the manager.</figcaption>
+      </figure>
+    </div>
+    
   </section>
     </div>
   </div>
