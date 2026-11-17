@@ -1,7 +1,7 @@
 # Sales Mama · website
 
 The GitHub Pages site for [Sales Mama](https://github.com/neam-lang/sales-mama.ai), the open-source sales harness
-for Claude Code. Live at **https://neam-lang.github.io/sales-mama.github.io/**
+for Claude Code. Live at **https://sales-mama.github.io/**
 
 | Page | What |
 |---|---|
